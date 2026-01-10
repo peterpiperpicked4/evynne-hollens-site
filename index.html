@@ -7,26 +7,23 @@
     <meta name="description" content="Evynne Hollens is an arts executive and programming leader with 15+ years of production experience, board governance, and community arts leadership in Eugene, Oregon.">
     <meta name="author" content="Evynne Hollens">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://hollensarts.com">
+    <link rel="canonical" href="https://www.ehollens.com">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://hollensarts.com">
+    <meta property="og:url" content="https://www.ehollens.com">
     <meta property="og:title" content="Evynne Hollens – Arts Executive & Creative Leader">
     <meta property="og:description" content="Programming director and artistic leader with 15+ years building audiences, managing productions, and strengthening arts organizations.">
-    <meta property="og:image" content="https://hollensarts.com/headshot.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="1600">
+    <meta property="og:image" content="https://www.ehollens.com/headshot.jpg">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@evynnehollens">
     <meta name="twitter:title" content="Evynne Hollens – Arts Executive & Creative Leader">
     <meta name="twitter:description" content="Programming director and artistic leader with 15+ years building audiences, managing productions, and strengthening arts organizations.">
-    <meta name="twitter:image" content="https://hollensarts.com/headshot.jpg">
 
     <!-- Favicon & Touch Icons -->
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23C4785C' width='100' height='100' rx='50'/><text x='50' y='65' font-family='Georgia,serif' font-size='48' font-weight='400' fill='white' text-anchor='middle'>E</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23B86B4C' width='100' height='100' rx='50'/><text x='50' y='65' font-family='Georgia,serif' font-size='48' font-weight='400' fill='white' text-anchor='middle'>E</text></svg>">
     <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'><rect fill='%23B86B4C' width='180' height='180'/><text x='90' y='120' font-family='Georgia,serif' font-size='90' font-weight='400' fill='white' text-anchor='middle'>E</text></svg>">
 
     <!-- JSON-LD Structured Data -->
@@ -37,8 +34,8 @@
         "name": "Evynne Hollens",
         "jobTitle": "Arts Executive & Programming Leader",
         "description": "Arts executive with 15+ years of programming experience, board governance, and community arts leadership.",
-        "url": "https://hollensarts.com",
-        "image": "https://hollensarts.com/headshot.jpg",
+        "url": "https://www.ehollens.com",
+        "image": "https://www.ehollens.com/headshot.jpg",
         "sameAs": [
             "https://www.youtube.com/evynnehollens",
             "https://www.instagram.com/evynnehollens",
@@ -52,7 +49,8 @@
             "addressLocality": "Eugene",
             "addressRegion": "OR",
             "addressCountry": "US"
-        }
+        },
+        "knowsLanguage": ["English", "Spanish"]
     }
     </script>
 
@@ -63,34 +61,23 @@
 
     <style>
         :root {
-            /* Refined warm palette */
             --color-bg: #FAF9F7;
             --color-bg-alt: #F5F3F0;
             --color-bg-elevated: #FFFFFF;
-
             --color-ink: #1F1D1B;
             --color-ink-secondary: #4A4744;
             --color-ink-tertiary: #7A7672;
-
             --color-accent: #B86B4C;
             --color-accent-hover: #9D5A3E;
             --color-accent-subtle: #B86B4C0D;
             --color-accent-light: #D4A08A;
             --color-on-accent: #FFFFFF;
-
             --color-gold: #C4A35A;
-
-            /* RGB versions for rgba() usage */
             --color-bg-rgb: 250, 249, 247;
-
             --color-line: #E5E2DD;
             --color-line-subtle: #EFECE8;
-
-            /* Typography */
             --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif;
             --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-
-            /* Spacing scale */
             --space-3xs: 0.25rem;
             --space-2xs: 0.5rem;
             --space-xs: 0.75rem;
@@ -101,67 +88,33 @@
             --space-2xl: 4.5rem;
             --space-3xl: 6rem;
             --space-4xl: 8rem;
-
-            /* Layout */
             --max-width: 1180px;
             --content-width: 680px;
-
-            /* Effects */
             --shadow-sm: 0 1px 2px rgba(31, 29, 27, 0.04);
             --shadow-md: 0 4px 12px rgba(31, 29, 27, 0.06);
             --shadow-lg: 0 12px 32px rgba(31, 29, 27, 0.08);
-            --shadow-xl: 0 24px 48px rgba(31, 29, 27, 0.10);
-
             --radius-sm: 4px;
             --radius-md: 8px;
             --radius-lg: 12px;
             --radius-full: 9999px;
-
             --transition-fast: 150ms ease;
             --transition-base: 250ms ease;
-            --transition-slow: 400ms ease;
-
             --min-touch: 44px;
         }
 
-        /* Reset */
-        *, *::before, *::after {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+        :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
+        ::selection { background: var(--color-accent-light); color: var(--color-ink); }
 
-        html {
-            scroll-behavior: smooth;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            text-rendering: optimizeLegibility;
-        }
-
-        /* Focus states */
-        :focus-visible {
-            outline: 2px solid var(--color-accent);
-            outline-offset: 3px;
-        }
-
-        /* Selection */
-        ::selection {
-            background: var(--color-accent-light);
-            color: var(--color-ink);
-        }
-
-        /* Body */
         body {
             font-family: var(--font-body);
             font-size: 1rem;
-            font-weight: 400;
             line-height: 1.65;
             color: var(--color-ink-secondary);
             background: var(--color-bg);
-            overflow-x: hidden;
         }
 
-        /* Subtle grain texture overlay */
         body::before {
             content: '';
             position: fixed;
@@ -172,65 +125,18 @@
             z-index: 1;
         }
 
-        /* Typography */
-        h1, h2, h3, h4 {
-            font-family: var(--font-display);
-            font-weight: 500;
-            line-height: 1.15;
-            color: var(--color-ink);
-            letter-spacing: -0.01em;
-        }
+        h1, h2, h3, h4 { font-family: var(--font-display); font-weight: 500; line-height: 1.15; color: var(--color-ink); letter-spacing: -0.01em; }
+        h1 { font-size: clamp(2.5rem, 5.5vw, 3.75rem); font-weight: 400; letter-spacing: -0.02em; }
+        h2 { font-size: clamp(1.75rem, 3.5vw, 2.25rem); }
+        h3 { font-size: 1.25rem; font-weight: 600; }
+        h4 { font-size: 1.0625rem; font-weight: 600; }
+        p { max-width: 65ch; }
+        a { color: var(--color-accent); text-decoration: none; transition: color var(--transition-fast); }
+        a:hover { color: var(--color-accent-hover); }
 
-        h1 {
-            font-size: clamp(2.5rem, 5.5vw, 3.75rem);
-            font-weight: 400;
-            letter-spacing: -0.02em;
-        }
+        .container { max-width: var(--max-width); margin: 0 auto; padding: 0 var(--space-md); }
+        .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
 
-        h2 {
-            font-size: clamp(1.75rem, 3.5vw, 2.25rem);
-        }
-
-        h3 {
-            font-size: 1.25rem;
-            font-weight: 600;
-        }
-
-        p {
-            max-width: 65ch;
-        }
-
-        a {
-            color: var(--color-accent);
-            text-decoration: none;
-            transition: color var(--transition-fast);
-        }
-
-        a:hover {
-            color: var(--color-accent-hover);
-        }
-
-        /* Utilities */
-        .container {
-            width: 100%;
-            max-width: var(--max-width);
-            margin: 0 auto;
-            padding: 0 var(--space-md);
-        }
-
-        .visually-hidden {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border: 0;
-        }
-
-        /* Skip link */
         .skip-link {
             position: absolute;
             top: -100%;
@@ -243,27 +149,13 @@
             z-index: 1000;
             transition: top var(--transition-base);
         }
+        .skip-link:focus { top: var(--space-sm); color: var(--color-bg); }
 
-        .skip-link:focus {
-            top: var(--space-sm);
-            color: var(--color-bg);
-        }
-
-        /* Icon system */
-        .icon {
-            width: 24px;
-            height: 24px;
-            stroke: currentColor;
-            stroke-width: 1.5;
-            stroke-linecap: round;
-            stroke-linejoin: round;
-            fill: none;
-        }
-
+        .icon { width: 24px; height: 24px; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; fill: none; }
         .icon--sm { width: 18px; height: 18px; }
         .icon--lg { width: 32px; height: 32px; }
 
-        /* ==================== NAVIGATION ==================== */
+        /* Navigation */
         .nav {
             position: fixed;
             top: 0;
@@ -277,158 +169,31 @@
             border-bottom: 1px solid transparent;
             transition: all var(--transition-base);
         }
+        .nav.scrolled { padding: var(--space-xs) 0; border-color: var(--color-line); box-shadow: var(--shadow-sm); }
+        .nav__inner { display: flex; justify-content: space-between; align-items: center; }
+        .nav__brand { font-family: var(--font-display); font-size: 1.25rem; font-weight: 500; color: var(--color-ink); display: flex; align-items: center; gap: var(--space-xs); min-height: var(--min-touch); }
+        .nav__brand:hover { color: var(--color-ink); }
+        .nav__brand-mark { width: 32px; height: 32px; background: var(--color-accent); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; color: var(--color-on-accent); font-family: var(--font-display); font-size: 0.875rem; font-weight: 500; }
+        .nav__links { display: flex; align-items: center; gap: var(--space-lg); list-style: none; }
+        .nav__link { font-size: 0.875rem; font-weight: 500; color: var(--color-ink-tertiary); padding: var(--space-2xs) 0; position: relative; min-height: var(--min-touch); display: flex; align-items: center; }
+        .nav__link::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1.5px; background: var(--color-accent); transform: scaleX(0); transform-origin: right; transition: transform var(--transition-base); }
+        .nav__link:hover { color: var(--color-ink); }
+        .nav__link:hover::after { transform: scaleX(1); transform-origin: left; }
+        .nav__cta { background: var(--color-ink); color: var(--color-bg) !important; padding: var(--space-xs) var(--space-md); border-radius: var(--radius-full); font-weight: 500; font-size: 0.875rem; transition: all var(--transition-fast); }
+        .nav__cta:hover { background: var(--color-accent); transform: translateY(-1px); box-shadow: var(--shadow-md); }
+        .nav__cta::after { display: none; }
+        .nav__mobile-btn { display: none; background: none; border: none; cursor: pointer; padding: var(--space-2xs); min-width: var(--min-touch); min-height: var(--min-touch); color: var(--color-ink); }
 
-        .nav.scrolled {
-            padding: var(--space-xs) 0;
-            border-color: var(--color-line);
-            box-shadow: var(--shadow-sm);
-        }
-
-        .nav__inner {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .nav__brand {
-            font-family: var(--font-display);
-            font-size: 1.25rem;
-            font-weight: 500;
-            color: var(--color-ink);
-            display: flex;
-            align-items: center;
-            gap: var(--space-xs);
-            min-height: var(--min-touch);
-            letter-spacing: 0.01em;
-        }
-
-        .nav__brand:hover {
-            color: var(--color-ink);
-        }
-
-        .nav__brand-mark {
-            width: 32px;
-            height: 32px;
-            background: var(--color-accent);
-            border-radius: var(--radius-full);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-on-accent);
-            font-family: var(--font-display);
-            font-size: 0.875rem;
-            font-weight: 500;
-            letter-spacing: 0;
-        }
-
-        .nav__links {
-            display: flex;
-            align-items: center;
-            gap: var(--space-xl);
-            list-style: none;
-        }
-
-        .nav__link {
-            font-size: 0.875rem;
-            font-weight: 500;
-            color: var(--color-ink-tertiary);
-            letter-spacing: 0.01em;
-            padding: var(--space-2xs) 0;
-            position: relative;
-            min-height: var(--min-touch);
-            display: flex;
-            align-items: center;
-        }
-
-        .nav__link::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 1.5px;
-            background: var(--color-accent);
-            transform: scaleX(0);
-            transform-origin: right;
-            transition: transform var(--transition-base);
-        }
-
-        .nav__link:hover {
-            color: var(--color-ink);
-        }
-
-        .nav__link:hover::after {
-            transform: scaleX(1);
-            transform-origin: left;
-        }
-
-        .nav__cta {
-            background: var(--color-ink);
-            color: var(--color-bg) !important;
-            padding: var(--space-xs) var(--space-md);
-            border-radius: var(--radius-full);
-            font-weight: 500;
-            font-size: 0.875rem;
-            transition: all var(--transition-fast);
-        }
-
-        .nav__cta:hover {
-            background: var(--color-accent);
-            transform: translateY(-1px);
-            box-shadow: var(--shadow-md);
-        }
-
-        .nav__cta::after {
-            display: none;
-        }
-
-        .nav__mobile-btn {
-            display: none;
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: var(--space-2xs);
-            min-width: var(--min-touch);
-            min-height: var(--min-touch);
-            color: var(--color-ink);
-        }
-
-        @media (max-width: 900px) {
-            .nav__links {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                right: 0;
-                background: var(--color-bg);
-                flex-direction: column;
-                padding: var(--space-md);
-                gap: 0;
-                border-bottom: 1px solid var(--color-line);
-                box-shadow: var(--shadow-lg);
-            }
-
+        @media (max-width: 1000px) {
+            .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-bg); flex-direction: column; padding: var(--space-md); gap: 0; border-bottom: 1px solid var(--color-line); box-shadow: var(--shadow-lg); }
             .nav__links.active { display: flex; }
             .nav__links li { width: 100%; }
-
-            .nav__link {
-                width: 100%;
-                padding: var(--space-sm);
-                justify-content: center;
-                border-bottom: 1px solid var(--color-line-subtle);
-            }
-
+            .nav__link { width: 100%; padding: var(--space-sm); justify-content: center; border-bottom: 1px solid var(--color-line-subtle); }
             .nav__link::after { display: none; }
-            .nav__links li:last-child .nav__link { border-bottom: none; }
-
-            .nav__mobile-btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
+            .nav__mobile-btn { display: flex; align-items: center; justify-content: center; }
         }
 
-        /* ==================== HERO ==================== */
+        /* Hero */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -436,8 +201,6 @@
             padding: calc(80px + var(--space-2xl)) 0 var(--space-3xl);
             position: relative;
         }
-
-        /* Subtle decorative element */
         .hero::before {
             content: '';
             position: absolute;
@@ -451,952 +214,271 @@
             pointer-events: none;
             opacity: 0.8;
         }
-
-        .hero__inner {
-            display: grid;
-            grid-template-columns: 1.1fr 0.9fr;
-            gap: var(--space-3xl);
-            align-items: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero__content {
-            max-width: 540px;
-        }
-
-        .hero__eyebrow {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-xs);
-            font-size: 0.6875rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.12em;
-            color: var(--color-accent);
-            margin-bottom: var(--space-md);
-        }
-
-        .hero__eyebrow::before {
-            content: '';
-            width: 28px;
-            height: 1px;
-            background: var(--color-accent);
-        }
-
-        .hero__title {
-            margin-bottom: var(--space-md);
-        }
-
-        .hero__title-highlight {
-            color: var(--color-accent);
-            font-style: italic;
-        }
-
-        .hero__subtitle {
-            font-family: var(--font-display);
-            font-size: clamp(1.125rem, 2vw, 1.375rem);
-            font-weight: 400;
-            font-style: italic;
-            color: var(--color-ink-secondary);
-            margin-bottom: var(--space-md);
-            line-height: 1.5;
-        }
-
-        .hero__description {
-            font-size: 1.0625rem;
-            line-height: 1.75;
-            margin-bottom: var(--space-lg);
-        }
-
-        .hero__cta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: var(--space-sm);
-            margin-bottom: var(--space-2xl);
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--space-2xs);
-            padding: 0.875rem 1.75rem;
-            font-family: var(--font-body);
-            font-size: 0.875rem;
-            font-weight: 600;
-            letter-spacing: 0.02em;
-            border-radius: var(--radius-full);
-            cursor: pointer;
-            border: none;
-            min-height: var(--min-touch);
-            transition: all var(--transition-fast);
-        }
-
-        .btn--primary {
-            background: var(--color-ink);
-            color: var(--color-bg);
-        }
-
-        .btn--primary:hover {
-            background: var(--color-accent);
-            color: var(--color-on-accent);
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-lg);
-        }
-
-        .btn--secondary {
-            background: transparent;
-            color: var(--color-ink);
-            box-shadow: inset 0 0 0 1.5px var(--color-line);
-        }
-
-        .btn--secondary:hover {
-            box-shadow: inset 0 0 0 1.5px var(--color-ink);
-        }
-
-        .btn .icon {
-            width: 18px;
-            height: 18px;
-        }
-
-        /* Stats */
-        .hero__stats {
-            display: flex;
-            gap: var(--space-xl);
-            padding-top: var(--space-lg);
-            border-top: 1px solid var(--color-line);
-            list-style: none;
-        }
-
-        .stat {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .stat__value {
-            font-family: var(--font-display);
-            font-size: 1.75rem;
-            font-weight: 500;
-            color: var(--color-ink);
-            line-height: 1;
-            margin-bottom: var(--space-3xs);
-        }
-
-        .stat__label {
-            font-size: 0.8125rem;
-            color: var(--color-ink-tertiary);
-        }
-
-        /* Hero Image */
-        .hero__image-col {
-            position: relative;
-            display: flex;
-            justify-content: center;
-        }
-
-        .hero__image-container {
-            position: relative;
-            width: 100%;
-            max-width: 380px;
-        }
-
-        /* Decorative frame */
-        .hero__image-container::before {
-            content: '';
-            position: absolute;
-            inset: -12px;
-            border: 1px solid var(--color-line);
-            border-radius: var(--radius-lg);
-            pointer-events: none;
-        }
-
-        /* Corner accent */
-        .hero__image-container::after {
-            content: '';
-            position: absolute;
-            top: -24px;
-            right: -24px;
-            width: 48px;
-            height: 48px;
-            background: var(--color-gold);
-            opacity: 0.15;
-            border-radius: var(--radius-full);
-        }
-
-        .hero__image {
-            width: 100%;
-            height: auto;
-            aspect-ratio: 2/3;
-            object-fit: cover;
-            object-position: center 20%;
-            border-radius: var(--radius-md);
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero__image-label {
-            position: absolute;
-            bottom: -32px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 0.75rem;
-            font-weight: 500;
-            color: var(--color-ink-tertiary);
-            letter-spacing: 0.08em;
-            text-transform: uppercase;
-            white-space: nowrap;
-        }
+        .hero__inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: var(--space-3xl); align-items: center; position: relative; z-index: 1; }
+        .hero__content { max-width: 560px; }
+        .hero__eyebrow { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: 0.6875rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--color-accent); margin-bottom: var(--space-md); }
+        .hero__eyebrow::before { content: ''; width: 28px; height: 1px; background: var(--color-accent); }
+        .hero__title { margin-bottom: var(--space-sm); }
+        .hero__title-highlight { color: var(--color-accent); font-style: italic; }
+        .hero__roles { font-size: 1.125rem; font-weight: 500; color: var(--color-ink-secondary); margin-bottom: var(--space-md); }
+        .hero__roles span { color: var(--color-accent); }
+        .hero__description { font-size: 1.0625rem; line-height: 1.75; margin-bottom: var(--space-lg); }
+        .hero__cta { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-bottom: var(--space-2xl); }
+        .hero__stats { display: flex; gap: var(--space-xl); padding-top: var(--space-lg); border-top: 1px solid var(--color-line); list-style: none; flex-wrap: wrap; }
+        .stat { display: flex; flex-direction: column; }
+        .stat__value { font-family: var(--font-display); font-size: 1.75rem; font-weight: 500; color: var(--color-ink); line-height: 1; margin-bottom: var(--space-3xs); }
+        .stat__label { font-size: 0.8125rem; color: var(--color-ink-tertiary); }
+        .hero__image-col { position: relative; display: flex; justify-content: center; }
+        .hero__image-container { position: relative; width: 100%; max-width: 380px; }
+        .hero__image-container::before { content: ''; position: absolute; inset: -12px; border: 1px solid var(--color-line); border-radius: var(--radius-lg); pointer-events: none; }
+        .hero__image-container::after { content: ''; position: absolute; top: -24px; right: -24px; width: 48px; height: 48px; background: var(--color-gold); opacity: 0.15; border-radius: var(--radius-full); }
+        .hero__image { width: 100%; height: auto; aspect-ratio: 2/3; object-fit: cover; object-position: center 20%; border-radius: var(--radius-md); position: relative; z-index: 1; }
+        .hero__image-label { position: absolute; bottom: -32px; left: 50%; transform: translateX(-50%); font-size: 0.75rem; font-weight: 500; color: var(--color-ink-tertiary); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+        .hero__credentials { margin-top: var(--space-lg); display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+        .credential-tag { display: inline-flex; align-items: center; gap: var(--space-2xs); font-size: 0.75rem; font-weight: 500; color: var(--color-ink-tertiary); background: var(--color-bg-alt); padding: var(--space-2xs) var(--space-xs); border-radius: var(--radius-full); border: 1px solid var(--color-line-subtle); }
 
         @media (max-width: 900px) {
-            .hero__inner {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: var(--space-2xl);
-            }
-
+            .hero__inner { grid-template-columns: 1fr; text-align: center; gap: var(--space-2xl); }
             .hero__content { max-width: 100%; order: 2; }
             .hero__image-col { order: 1; }
             .hero__image-container { max-width: 280px; }
             .hero__eyebrow { justify-content: center; }
             .hero__cta { justify-content: center; }
             .hero__stats { justify-content: center; }
+            .hero__credentials { justify-content: center; }
         }
 
-        /* ==================== SECTIONS ==================== */
-        section {
-            padding: var(--space-4xl) 0;
-            position: relative;
-        }
+        /* Buttons */
+        .btn { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2xs); padding: 0.875rem 1.75rem; font-family: var(--font-body); font-size: 0.875rem; font-weight: 600; letter-spacing: 0.02em; border-radius: var(--radius-full); cursor: pointer; border: none; min-height: var(--min-touch); transition: all var(--transition-fast); }
+        .btn--primary { background: var(--color-ink); color: var(--color-bg); }
+        .btn--primary:hover { background: var(--color-accent); color: var(--color-on-accent); transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+        .btn--secondary { background: transparent; color: var(--color-ink); box-shadow: inset 0 0 0 1.5px var(--color-line); }
+        .btn--secondary:hover { box-shadow: inset 0 0 0 1.5px var(--color-ink); }
+        .btn .icon { width: 18px; height: 18px; }
 
-        .section-header {
-            max-width: var(--content-width);
-            margin-bottom: var(--space-2xl);
-        }
+        /* Sections */
+        section { padding: var(--space-4xl) 0; position: relative; }
+        .section-header { max-width: var(--content-width); margin-bottom: var(--space-2xl); }
+        .section-header--center { text-align: center; margin-left: auto; margin-right: auto; }
+        .section-label { display: inline-flex; align-items: center; gap: var(--space-xs); font-size: 0.625rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--color-accent); margin-bottom: var(--space-sm); }
+        .section-label::before { content: ''; width: 20px; height: 1px; background: currentColor; }
+        .section-header--center .section-label::before { display: none; }
+        .section-intro { font-size: 1.0625rem; line-height: 1.75; color: var(--color-ink-secondary); }
+        .section-divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--color-line) 20%, var(--color-line) 80%, transparent); }
 
-        .section-header--center {
-            text-align: center;
-            margin-left: auto;
-            margin-right: auto;
-        }
+        /* Philosophy Quote */
+        .philosophy { background: var(--color-bg-alt); }
+        .philosophy__inner { max-width: 800px; margin: 0 auto; text-align: center; }
+        .philosophy__quote { font-family: var(--font-display); font-size: clamp(1.25rem, 2.5vw, 1.5rem); font-style: italic; line-height: 1.6; color: var(--color-ink); margin-bottom: var(--space-md); }
+        .philosophy__quote::before { content: '"'; display: block; font-size: 4rem; line-height: 1; color: var(--color-accent); opacity: 0.3; margin-bottom: var(--space-sm); }
 
-        .section-label {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-xs);
-            font-size: 0.625rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
+        /* Leadership */
+        .leadership { background: var(--color-bg-alt); }
+        .leadership-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); }
+        .leadership-card { background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); padding: var(--space-lg); transition: all var(--transition-base); position: relative; }
+        .leadership-card::before { content: ''; position: absolute; inset: 0; border-radius: inherit; box-shadow: var(--shadow-lg); opacity: 0; transition: opacity var(--transition-base); }
+        .leadership-card:hover { transform: translateY(-4px); border-color: transparent; }
+        .leadership-card:hover::before { opacity: 1; }
+        .leadership-card.featured { border-left: 3px solid var(--color-accent); }
+        .leadership-card__icon { width: 44px; height: 44px; background: var(--color-accent-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-md); color: var(--color-accent); }
+        .leadership-card__duration { font-size: 0.75rem; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-2xs); }
+        .leadership-card h3 { margin-bottom: var(--space-3xs); font-size: 1.125rem; }
+        .leadership-card__org { font-size: 0.875rem; font-weight: 600; color: var(--color-accent); margin-bottom: var(--space-sm); }
+        .leadership-card p { font-size: 0.9375rem; line-height: 1.65; }
+        .leadership-card__highlights { list-style: none; margin-top: var(--space-sm); }
+        .leadership-card__highlights li { font-size: 0.875rem; color: var(--color-ink-tertiary); padding-left: var(--space-md); position: relative; margin-bottom: var(--space-2xs); }
+        .leadership-card__highlights li::before { content: ''; position: absolute; left: 0; top: 0.5em; width: 6px; height: 6px; background: var(--color-accent); border-radius: 50%; opacity: 0.5; }
 
-        .section-label::before {
-            content: '';
-            width: 20px;
-            height: 1px;
-            background: currentColor;
-        }
+        @media (max-width: 768px) { .leadership-grid { grid-template-columns: 1fr; } }
 
-        .section-header--center .section-label::before {
-            display: none;
-        }
+        /* Core Competencies */
+        .competencies-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); }
+        .competency-card { text-align: center; padding: var(--space-lg); background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); transition: all var(--transition-base); }
+        .competency-card:hover { border-color: var(--color-accent); transform: translateY(-2px); }
+        .competency-card__icon { width: 48px; height: 48px; margin: 0 auto var(--space-sm); background: var(--color-accent-subtle); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; color: var(--color-accent); }
+        .competency-card h4 { font-size: 0.9375rem; margin-bottom: 0; }
 
-        .section-intro {
-            font-size: 1.0625rem;
-            line-height: 1.75;
-            color: var(--color-ink-secondary);
-        }
+        @media (max-width: 900px) { .competencies-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .competencies-grid { grid-template-columns: 1fr; } }
 
-        /* Section divider */
-        .section-divider {
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, var(--color-line) 20%, var(--color-line) 80%, transparent);
-        }
+        /* Mija */
+        .mija { background: var(--color-bg-alt); }
+        .mija__content { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: start; }
+        .mija__info h3 { font-size: 1.5rem; margin-bottom: var(--space-sm); }
+        .mija__tagline { font-family: var(--font-display); font-style: italic; font-size: 1.125rem; color: var(--color-ink-secondary); margin-bottom: var(--space-md); }
+        .mija__description { margin-bottom: var(--space-lg); }
+        .mija__team { margin-bottom: var(--space-lg); }
+        .mija__team h4 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: var(--space-sm); }
+        .mija__team-list { list-style: none; }
+        .mija__team-list li { font-size: 0.9375rem; margin-bottom: var(--space-2xs); }
+        .mija__team-list strong { color: var(--color-ink); }
+        .mija__awards { background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); padding: var(--space-lg); }
+        .mija__awards h4 { font-size: 1rem; margin-bottom: var(--space-md); }
+        .award-item { display: flex; align-items: flex-start; gap: var(--space-sm); margin-bottom: var(--space-sm); }
+        .award-item:last-child { margin-bottom: 0; }
+        .award-item__icon { width: 24px; height: 24px; background: var(--color-gold); opacity: 0.2; border-radius: var(--radius-full); flex-shrink: 0; margin-top: 2px; }
+        .award-item__info { font-size: 0.9375rem; }
+        .award-item__info strong { display: block; color: var(--color-ink); }
+        .award-item__info span { color: var(--color-ink-tertiary); font-size: 0.875rem; }
+        .mija__partners h4 { font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--color-accent); margin-bottom: var(--space-sm); margin-top: var(--space-lg); }
+        .mija__partners-list { display: flex; flex-wrap: wrap; gap: var(--space-2xs); }
+        .partner-tag { font-size: 0.75rem; background: var(--color-bg-alt); border: 1px solid var(--color-line-subtle); padding: var(--space-2xs) var(--space-xs); border-radius: var(--radius-full); color: var(--color-ink-tertiary); }
 
-        /* ==================== LEADERSHIP ==================== */
-        .leadership {
-            background: var(--color-bg-alt);
-        }
+        @media (max-width: 768px) { .mija__content { grid-template-columns: 1fr; } }
 
-        .leadership-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: var(--space-md);
-        }
-
-        .leadership-card {
-            background: var(--color-bg-elevated);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-lg);
-            padding: var(--space-lg);
-            transition: all var(--transition-base);
-            position: relative;
-        }
-
-        .leadership-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            box-shadow: var(--shadow-lg);
-            opacity: 0;
-            transition: opacity var(--transition-base);
-        }
-
-        .leadership-card:hover {
-            transform: translateY(-4px);
-            border-color: transparent;
-        }
-
-        .leadership-card:hover::before {
-            opacity: 1;
-        }
-
-        .leadership-card.featured {
-            border-left: 3px solid var(--color-accent);
-        }
-
-        .leadership-card__icon {
-            width: 44px;
-            height: 44px;
-            background: var(--color-accent-subtle);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: var(--space-md);
-            color: var(--color-accent);
-        }
-
-        .leadership-card h3 {
-            margin-bottom: var(--space-3xs);
-            font-size: 1.125rem;
-        }
-
-        .leadership-card__org {
-            font-size: 0.875rem;
-            font-weight: 600;
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
-
-        .leadership-card p {
-            font-size: 0.9375rem;
-            line-height: 1.65;
-        }
+        /* Theater */
+        .theater-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-md); margin-bottom: var(--space-2xl); }
+        .theater-card { background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); padding: var(--space-lg); }
+        .theater-card__year { font-size: 0.75rem; font-weight: 600; color: var(--color-accent); text-transform: uppercase; letter-spacing: 0.1em; margin-bottom: var(--space-2xs); }
+        .theater-card h4 { font-size: 1.125rem; margin-bottom: var(--space-3xs); }
+        .theater-card__show { font-size: 0.9375rem; color: var(--color-ink-secondary); font-style: italic; margin-bottom: var(--space-2xs); }
+        .theater-card__venue { font-size: 0.8125rem; color: var(--color-ink-tertiary); }
+        .theater-card.broadway { border-left: 3px solid var(--color-gold); }
+        .theater-affiliations { background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); padding: var(--space-lg); }
+        .theater-affiliations h3 { margin-bottom: var(--space-md); font-size: 1.125rem; }
+        .affiliation-list { list-style: none; display: grid; grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+        .affiliation-item { display: flex; align-items: center; gap: var(--space-sm); font-size: 0.9375rem; }
+        .affiliation-item__icon { width: 28px; height: 28px; background: var(--color-bg-alt); border-radius: var(--radius-sm); display: flex; align-items: center; justify-content: center; color: var(--color-ink-tertiary); flex-shrink: 0; }
 
         @media (max-width: 768px) {
-            .leadership-grid { grid-template-columns: 1fr; }
+            .theater-grid { grid-template-columns: 1fr; }
+            .affiliation-list { grid-template-columns: 1fr; }
         }
 
-        /* ==================== CREATIVE ==================== */
-        .creative-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
-        }
-
-        .creative-card {
-            background: var(--color-bg-elevated);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-lg);
-            overflow: hidden;
-            transition: all var(--transition-base);
-            position: relative;
-        }
-
-        .creative-card::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            border-radius: inherit;
-            box-shadow: var(--shadow-lg);
-            opacity: 0;
-            transition: opacity var(--transition-base);
-            pointer-events: none;
-        }
-
-        .creative-card:hover {
-            transform: translateY(-4px);
-            border-color: transparent;
-        }
-
-        .creative-card:hover::before {
-            opacity: 1;
-        }
-
-        .creative-card__visual {
-            height: 140px;
-            background: linear-gradient(135deg, var(--color-accent-subtle) 0%, var(--color-bg-alt) 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-accent);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .creative-card__visual::after {
-            content: '';
-            position: absolute;
-            width: 80px;
-            height: 80px;
-            background: var(--color-accent);
-            opacity: 0.08;
-            border-radius: var(--radius-full);
-            right: -20px;
-            bottom: -20px;
-        }
-
-        .creative-card__content {
-            padding: var(--space-md);
-        }
-
-        .creative-card__tag {
-            display: inline-block;
-            font-size: 0.625rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--color-accent);
-            background: var(--color-accent-subtle);
-            padding: var(--space-3xs) var(--space-xs);
-            border-radius: var(--radius-full);
-            margin-bottom: var(--space-sm);
-        }
-
-        .creative-card h3 {
-            font-size: 1.125rem;
-            margin-bottom: var(--space-3xs);
-        }
-
-        .creative-card p {
-            font-size: 0.9375rem;
-            margin-bottom: var(--space-sm);
-            line-height: 1.6;
-        }
-
-        .creative-card__link {
-            font-size: 0.8125rem;
-            font-weight: 600;
-            display: inline-flex;
-            align-items: center;
-            gap: var(--space-3xs);
-        }
-
-        .creative-card__link .icon {
-            width: 14px;
-            height: 14px;
-            transition: transform var(--transition-fast);
-        }
-
-        .creative-card:hover .creative-card__link .icon {
-            transform: translateX(3px);
-        }
-
-        .creative-card__status {
-            font-size: 0.8125rem;
-            font-weight: 500;
-            color: var(--color-ink-tertiary);
-            font-style: italic;
-        }
-
-        @media (max-width: 900px) {
-            .creative-grid { grid-template-columns: 1fr; }
-        }
-
-        /* ==================== THEATER ==================== */
-        .theater {
-            background: var(--color-bg-alt);
-        }
-
-        .theater-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--space-3xl);
-            align-items: start;
-        }
-
-        .theater-highlights {
-            list-style: none;
-            display: flex;
-            flex-direction: column;
-            gap: var(--space-sm);
-        }
-
-        .theater-highlight {
-            display: flex;
-            align-items: center;
-            gap: var(--space-md);
-            padding: var(--space-md);
-            background: var(--color-bg-elevated);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-md);
-            color: var(--color-ink);
-        }
-
-        .theater-highlight__icon {
-            width: 44px;
-            height: 44px;
-            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent-light) 100%);
-            opacity: 0.15;
-            border-radius: var(--radius-full);
-            flex-shrink: 0;
-            position: relative;
-        }
-
-        .theater-highlight__icon::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-accent) 100%);
-            border-radius: inherit;
-            opacity: 0.12;
-        }
-
-        .theater-highlight__info h4 {
-            font-family: var(--font-display);
-            font-size: 1.0625rem;
-            font-weight: 500;
-            margin-bottom: 2px;
-        }
-
-        .theater-highlight__info span {
-            font-size: 0.8125rem;
-            color: var(--color-ink-tertiary);
-        }
-
-        .theater-affiliations {
-            background: var(--color-bg-elevated);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-lg);
-            padding: var(--space-lg);
-        }
-
-        .theater-affiliations h3 {
-            margin-bottom: var(--space-md);
-            font-size: 1.125rem;
-        }
-
-        .affiliation-list {
-            list-style: none;
-        }
-
-        .affiliation-item {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            padding: var(--space-sm) 0;
-            border-bottom: 1px solid var(--color-line-subtle);
-        }
-
-        .affiliation-item:last-child {
-            border-bottom: none;
-            padding-bottom: 0;
-        }
-
-        .affiliation-item:first-child {
-            padding-top: 0;
-        }
-
-        .affiliation-item__icon {
-            width: 28px;
-            height: 28px;
-            background: var(--color-bg-alt);
-            border-radius: var(--radius-sm);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-ink-tertiary);
-        }
-
-        .affiliation-item span {
-            font-size: 0.9375rem;
-        }
-
-        @media (max-width: 768px) {
-            .theater-content { grid-template-columns: 1fr; }
-        }
-
-        /* ==================== DIGITAL ==================== */
-        .digital-stats {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: var(--space-md);
-            margin-bottom: var(--space-2xl);
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: var(--space-lg);
-            background: var(--color-bg-elevated);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-lg);
-            transition: all var(--transition-base);
-        }
-
-        .stat-card:hover {
-            border-color: var(--color-accent);
-        }
-
-        .stat-card__value {
-            font-family: var(--font-display);
-            font-size: 2.25rem;
-            font-weight: 500;
-            color: var(--color-accent);
-            line-height: 1;
-            margin-bottom: var(--space-3xs);
-        }
-
-        .stat-card__label {
-            font-size: 0.8125rem;
-            color: var(--color-ink-tertiary);
-        }
-
-        .digital-platforms {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-sm);
-        }
-
-        .platform-card {
-            display: flex;
-            align-items: center;
-            gap: var(--space-sm);
-            padding: var(--space-md);
-            background: var(--color-bg-alt);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-md);
-            color: var(--color-ink);
-            transition: all var(--transition-fast);
-        }
-
-        .platform-card:hover {
-            border-color: var(--color-accent);
-            background: var(--color-bg-elevated);
-        }
-
-        .platform-card__icon {
-            width: 36px;
-            height: 36px;
-            background: var(--color-bg-elevated);
-            border-radius: var(--radius-md);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--color-ink-tertiary);
-        }
-
-        .platform-card:hover .platform-card__icon {
-            color: var(--color-accent);
-        }
-
-        .platform-card__name {
-            font-weight: 500;
-            font-size: 0.9375rem;
-        }
+        /* Media/Digital */
+        .digital-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); margin-bottom: var(--space-2xl); }
+        .stat-card { text-align: center; padding: var(--space-lg); background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); }
+        .stat-card__value { font-family: var(--font-display); font-size: 2.25rem; font-weight: 500; color: var(--color-accent); line-height: 1; margin-bottom: var(--space-3xs); }
+        .stat-card__label { font-size: 0.8125rem; color: var(--color-ink-tertiary); }
+        .digital-content { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); }
+        .digital-section h3 { font-size: 1.25rem; margin-bottom: var(--space-md); display: flex; align-items: center; gap: var(--space-sm); }
+        .digital-section h3 .icon { color: var(--color-accent); }
+        .digital-section p { margin-bottom: var(--space-md); }
+        .digital-highlights { list-style: none; margin-bottom: var(--space-md); }
+        .digital-highlights li { font-size: 0.9375rem; padding: var(--space-sm) 0; border-bottom: 1px solid var(--color-line-subtle); display: flex; justify-content: space-between; }
+        .digital-highlights li:last-child { border-bottom: none; }
+        .digital-highlights strong { color: var(--color-ink); }
+        .digital-platforms { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
+        .platform-link { display: inline-flex; align-items: center; gap: var(--space-2xs); padding: var(--space-xs) var(--space-sm); background: var(--color-bg-alt); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-full); font-size: 0.875rem; font-weight: 500; color: var(--color-ink); transition: all var(--transition-fast); }
+        .platform-link:hover { border-color: var(--color-accent); color: var(--color-accent); }
 
         @media (max-width: 900px) {
             .digital-stats { grid-template-columns: repeat(2, 1fr); }
-            .digital-platforms { grid-template-columns: 1fr; }
+            .digital-content { grid-template-columns: 1fr; }
         }
 
-        /* ==================== PRESS ==================== */
-        .press {
-            background: var(--color-bg-alt);
-        }
+        /* Press */
+        .press { background: var(--color-bg-alt); }
+        .press-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: var(--space-md); }
+        .press-item { padding: var(--space-lg); background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); text-align: center; }
+        .press-item__logo { font-family: var(--font-display); font-size: 1rem; font-weight: 600; color: var(--color-ink); margin-bottom: var(--space-sm); }
+        .press-item__context { font-size: 0.8125rem; color: var(--color-ink-tertiary); font-style: italic; }
 
-        .press-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: var(--space-md);
-        }
+        @media (max-width: 900px) { .press-grid { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 500px) { .press-grid { grid-template-columns: 1fr; } }
 
-        .press-item {
-            display: block;
-            padding: var(--space-lg);
-            background: var(--color-bg-elevated);
-            border: 1px solid var(--color-line-subtle);
-            border-radius: var(--radius-lg);
-            color: var(--color-ink);
-            position: relative;
-        }
+        /* Coaching */
+        .coaching__content { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3xl); align-items: start; }
+        .coaching__info h3 { font-size: 1.5rem; margin-bottom: var(--space-sm); }
+        .coaching__tagline { font-family: var(--font-display); font-style: italic; font-size: 1.125rem; color: var(--color-accent); margin-bottom: var(--space-md); }
+        .coaching__offerings { list-style: none; }
+        .coaching__offerings li { display: flex; align-items: flex-start; gap: var(--space-sm); padding: var(--space-sm) 0; border-bottom: 1px solid var(--color-line-subtle); }
+        .coaching__offerings li:last-child { border-bottom: none; }
+        .coaching__offerings li .icon { color: var(--color-accent); flex-shrink: 0; margin-top: 2px; }
+        .coaching__cta { margin-top: var(--space-lg); }
+        .coaching__sidebar { background: var(--color-bg-elevated); border: 1px solid var(--color-line-subtle); border-radius: var(--radius-lg); padding: var(--space-lg); }
+        .coaching__sidebar h4 { margin-bottom: var(--space-md); }
+        .coaching__sidebar p { font-size: 0.9375rem; margin-bottom: var(--space-md); }
 
-        .press-item::before {
-            content: '"';
-            position: absolute;
-            top: var(--space-md);
-            right: var(--space-md);
-            font-family: var(--font-display);
-            font-size: 3rem;
-            line-height: 1;
-            color: var(--color-accent);
-            opacity: 0.15;
-        }
+        @media (max-width: 768px) { .coaching__content { grid-template-columns: 1fr; } }
 
-        .press-item__source {
-            display: block;
-            font-size: 0.6875rem;
-            font-weight: 600;
-            font-style: normal;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: var(--color-accent);
-            margin-bottom: var(--space-sm);
-        }
+        /* Contact */
+        .contact { text-align: center; }
+        .contact h2 { font-size: clamp(1.75rem, 4vw, 2.5rem); margin-bottom: var(--space-md); }
+        .contact > .container > p { font-size: 1.0625rem; max-width: 520px; margin: 0 auto var(--space-lg); }
+        .contact-cta { display: flex; justify-content: center; gap: var(--space-sm); flex-wrap: wrap; margin-bottom: var(--space-2xl); }
+        .social-links { display: flex; justify-content: center; gap: var(--space-xs); flex-wrap: wrap; list-style: none; }
+        .social-link { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; background: var(--color-bg-alt); border: 1px solid var(--color-line); border-radius: var(--radius-full); color: var(--color-ink-tertiary); transition: all var(--transition-fast); }
+        .social-link:hover { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-bg); transform: translateY(-2px); }
 
-        .press-item__quote {
-            font-family: var(--font-display);
-            font-size: 1.0625rem;
-            font-style: italic;
-            line-height: 1.55;
-            color: var(--color-ink-secondary);
-        }
+        /* Footer */
+        .footer { padding: var(--space-lg) 0; border-top: 1px solid var(--color-line); text-align: center; }
+        .footer p { font-size: 0.8125rem; color: var(--color-ink-tertiary); }
 
-        @media (max-width: 768px) {
-            .press-grid { grid-template-columns: 1fr; }
-        }
+        /* Scroll to top */
+        .scroll-top { position: fixed; bottom: var(--space-lg); right: var(--space-lg); width: 44px; height: 44px; background: var(--color-ink); color: var(--color-bg); border: none; border-radius: var(--radius-full); cursor: pointer; display: flex; align-items: center; justify-content: center; opacity: 0; visibility: hidden; transition: all var(--transition-base); z-index: 50; box-shadow: var(--shadow-lg); }
+        .scroll-top.visible { opacity: 1; visibility: visible; }
+        .scroll-top:hover { background: var(--color-accent); transform: translateY(-2px); }
 
-        /* ==================== CONTACT ==================== */
-        .contact {
-            text-align: center;
-        }
-
-        .contact h2 {
-            font-size: clamp(1.75rem, 4vw, 2.5rem);
-            margin-bottom: var(--space-md);
-        }
-
-        .contact > .container > p {
-            font-size: 1.0625rem;
-            max-width: 480px;
-            margin: 0 auto var(--space-lg);
-        }
-
-        .contact-cta {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-sm);
-            flex-wrap: wrap;
-            margin-bottom: var(--space-2xl);
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: var(--space-xs);
-            flex-wrap: wrap;
-            list-style: none;
-        }
-
-        .social-link {
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: var(--color-bg-alt);
-            border: 1px solid var(--color-line);
-            border-radius: var(--radius-full);
-            color: var(--color-ink-tertiary);
-            transition: all var(--transition-fast);
-        }
-
-        .social-link:hover {
-            background: var(--color-ink);
-            border-color: var(--color-ink);
-            color: var(--color-bg);
-            transform: translateY(-2px);
-        }
-
-        /* ==================== FOOTER ==================== */
-        .footer {
-            padding: var(--space-lg) 0;
-            border-top: 1px solid var(--color-line);
-            text-align: center;
-        }
-
-        .footer p {
-            font-size: 0.8125rem;
-            color: var(--color-ink-tertiary);
-        }
-
-        /* ==================== SCROLL TO TOP ==================== */
-        .scroll-top {
-            position: fixed;
-            bottom: var(--space-lg);
-            right: var(--space-lg);
-            width: 44px;
-            height: 44px;
-            background: var(--color-ink);
-            color: var(--color-bg);
-            border: none;
-            border-radius: var(--radius-full);
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: all var(--transition-base);
-            z-index: 50;
-            box-shadow: var(--shadow-lg);
-        }
-
-        .scroll-top.visible {
-            opacity: 1;
-            visibility: visible;
-        }
-
-        .scroll-top:hover {
-            background: var(--color-accent);
-            transform: translateY(-2px);
-        }
-
-        /* ==================== DARK MODE ==================== */
+        /* Dark Mode */
         @media (prefers-color-scheme: dark) {
             :root {
                 --color-bg: #18171A;
                 --color-bg-alt: #1E1D20;
                 --color-bg-elevated: #252428;
-
                 --color-ink: #F4F3F1;
                 --color-ink-secondary: #B8B5B0;
                 --color-ink-tertiary: #908D88;
-
                 --color-bg-rgb: 24, 23, 26;
-
                 --color-accent: #D4917A;
                 --color-accent-hover: #E0A38E;
                 --color-accent-subtle: #D4917A12;
                 --color-accent-light: #E8C4B5;
-
                 --color-line: #353338;
                 --color-line-subtle: #2A282D;
             }
-
-            body::before {
-                opacity: 0.02;
-            }
-
-            .nav__cta {
-                background: var(--color-accent);
-            }
+            body::before { opacity: 0.02; }
+            .nav__cta { background: var(--color-accent); }
         }
 
-        /* ==================== REDUCED MOTION ==================== */
         @media (prefers-reduced-motion: reduce) {
-            *, *::before, *::after {
-                animation-duration: 0.01ms !important;
-                animation-iteration-count: 1 !important;
-                transition-duration: 0.01ms !important;
-            }
+            *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
             html { scroll-behavior: auto; }
         }
 
-        /* ==================== PRINT ==================== */
         @media print {
             .nav, .scroll-top, .hero::before, body::before { display: none !important; }
             body { background: white; color: black; }
-            .hero { min-height: auto; padding: 2rem 0; }
             section { padding: 1.5rem 0; }
-            a { color: black; }
         }
     </style>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- SVG Icon Sprites -->
+    <!-- SVG Icons -->
     <svg style="display:none">
-        <symbol id="icon-theater" viewBox="0 0 24 24">
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="none" stroke="currentColor"/>
-            <circle cx="8.5" cy="10" r="1.5" fill="currentColor"/>
-            <circle cx="15.5" cy="10" r="1.5" fill="currentColor"/>
-            <path d="M8 14c0 2.21 1.79 4 4 4s4-1.79 4-4H8z" fill="currentColor"/>
-        </symbol>
-        <symbol id="icon-music" viewBox="0 0 24 24">
-            <path d="M9 18V5l12-2v13"/>
-            <circle cx="6" cy="18" r="3"/>
-            <circle cx="18" cy="16" r="3"/>
-        </symbol>
-        <symbol id="icon-star" viewBox="0 0 24 24">
-            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-        </symbol>
-        <symbol id="icon-users" viewBox="0 0 24 24">
-            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
-            <circle cx="9" cy="7" r="4"/>
-            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
-            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
-        </symbol>
-        <symbol id="icon-award" viewBox="0 0 24 24">
-            <circle cx="12" cy="8" r="7"/>
-            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/>
-        </symbol>
-        <symbol id="icon-arrow-right" viewBox="0 0 24 24">
-            <line x1="5" y1="12" x2="19" y2="12"/>
-            <polyline points="12 5 19 12 12 19"/>
-        </symbol>
-        <symbol id="icon-arrow-up" viewBox="0 0 24 24">
-            <line x1="12" y1="19" x2="12" y2="5"/>
-            <polyline points="5 12 12 5 19 12"/>
-        </symbol>
-        <symbol id="icon-mail" viewBox="0 0 24 24">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-            <polyline points="22,6 12,13 2,6"/>
-        </symbol>
-        <symbol id="icon-download" viewBox="0 0 24 24">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-        </symbol>
-        <symbol id="icon-youtube" viewBox="0 0 24 24">
-            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/>
-        </symbol>
-        <symbol id="icon-instagram" viewBox="0 0 24 24">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-        </symbol>
-        <symbol id="icon-spotify" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10"/>
-            <path d="M8 11.5c3-1 6.5-.5 8.5 1"/>
-            <path d="M7 14.5c2.5-.5 5.5-.5 8 1"/>
-            <path d="M9 8c2.5-.5 5.5 0 7 1.5"/>
-        </symbol>
-        <symbol id="icon-facebook" viewBox="0 0 24 24">
-            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
-        </symbol>
-        <symbol id="icon-twitter" viewBox="0 0 24 24">
-            <path d="M4 4l11.733 16h4.267l-11.733 -16z"/>
-            <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"/>
-        </symbol>
-        <symbol id="icon-heart" viewBox="0 0 24 24">
-            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-        </symbol>
-        <symbol id="icon-check" viewBox="0 0 24 24">
-            <polyline points="20 6 9 17 4 12"/>
-        </symbol>
-        <symbol id="icon-building" viewBox="0 0 24 24">
-            <rect x="4" y="2" width="16" height="20" rx="2" ry="2"/>
-            <line x1="9" y1="22" x2="9" y2="2"/>
-            <line x1="15" y1="22" x2="15" y2="2"/>
-            <line x1="4" y1="12" x2="20" y2="12"/>
-        </symbol>
-        <symbol id="icon-graduation" viewBox="0 0 24 24">
-            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
-            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
-        </symbol>
-        <symbol id="icon-menu" viewBox="0 0 24 24">
-            <line x1="3" y1="6" x2="21" y2="6"/>
-            <line x1="3" y1="12" x2="21" y2="12"/>
-            <line x1="3" y1="18" x2="21" y2="18"/>
-        </symbol>
+        <symbol id="icon-theater" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="8.5" cy="10" r="1.5" fill="currentColor"/><circle cx="15.5" cy="10" r="1.5" fill="currentColor"/><path d="M8 14c0 2.21 1.79 4 4 4s4-1.79 4-4H8z" fill="currentColor"/></symbol>
+        <symbol id="icon-music" viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></symbol>
+        <symbol id="icon-star" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
+        <symbol id="icon-users" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+        <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></symbol>
+        <symbol id="icon-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></symbol>
+        <symbol id="icon-arrow-up" viewBox="0 0 24 24"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
+        <symbol id="icon-mail" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></symbol>
+        <symbol id="icon-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></symbol>
+        <symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48" fill="currentColor"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></symbol>
+        <symbol id="icon-spotify" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M8 11.5c3-1 6.5-.5 8.5 1M7 14.5c2.5-.5 5.5-.5 8 1M9 8c2.5-.5 5.5 0 7 1.5"/></symbol>
+        <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+        <symbol id="icon-twitter" viewBox="0 0 24 24"><path d="M4 4l11.733 16h4.267l-11.733-16zM4 20l6.768-6.768m2.46-2.46l6.772-6.772"/></symbol>
+        <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></symbol>
+        <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></symbol>
+        <symbol id="icon-building" viewBox="0 0 24 24"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"/><line x1="9" y1="22" x2="9" y2="2"/><line x1="15" y1="22" x2="15" y2="2"/><line x1="4" y1="12" x2="20" y2="12"/></symbol>
+        <symbol id="icon-graduation" viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></symbol>
+        <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+        <symbol id="icon-mic" viewBox="0 0 24 24"><path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></symbol>
+        <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+        <symbol id="icon-ship" viewBox="0 0 24 24"><path d="M2 21c.6.5 1.2 1 2.5 1 2.5 0 2.5-2 5-2 2.5 0 2.5 2 5 2 1.3 0 1.9-.5 2.5-1"/><path d="M19.38 20A11.6 11.6 0 0 0 21 14l-9-4-9 4c0 2.9.94 5.34 2.81 7.76"/><path d="M12 2v8"/><path d="M12 6l5.8 2.2"/></symbol>
+        <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></symbol>
+        <symbol id="icon-dollar" viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></symbol>
+        <symbol id="icon-handshake" viewBox="0 0 24 24"><path d="M11 17a4 4 0 0 0 4-4V5"/><path d="M7 13V5"/><path d="M19 9a2 2 0 0 0-2-2h-1"/><path d="M5 9a2 2 0 0 1 2-2h1"/><path d="m9 17 3 3 7-7"/><path d="m5 21 3-3"/></symbol>
+        <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
+        <symbol id="icon-lightbulb" viewBox="0 0 24 24"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></symbol>
+        <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
+        <symbol id="icon-play" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></symbol>
+        <symbol id="icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></symbol>
+        <symbol id="icon-cart" viewBox="0 0 24 24"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></symbol>
     </svg>
 
     <!-- Navigation -->
@@ -1406,18 +488,17 @@
                 <span class="nav__brand-mark">E</span>
                 Evynne Hollens
             </a>
-
             <button class="nav__mobile-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links" type="button">
                 <svg class="icon"><use href="#icon-menu"/></svg>
             </button>
-
             <ul class="nav__links" id="nav-links">
                 <li><a href="#leadership" class="nav__link">Leadership</a></li>
-                <li><a href="#creative" class="nav__link">Creative</a></li>
+                <li><a href="#mija" class="nav__link">Mija</a></li>
                 <li><a href="#theater" class="nav__link">Theater</a></li>
-                <li><a href="#digital" class="nav__link">Digital</a></li>
-                <li><a href="#contact" class="nav__link">Contact</a></li>
-                <li><a href="resume.pdf" class="nav__cta" target="_blank" rel="noopener" aria-label="Resume (opens in new tab)">Resume<span class="visually-hidden"> (opens in new tab)</span></a></li>
+                <li><a href="#media" class="nav__link">Media</a></li>
+                <li><a href="#coaching" class="nav__link">Coaching</a></li>
+                <li><a href="https://store.peterhollens.com" class="nav__link" target="_blank" rel="noopener">Shop<span class="visually-hidden"> (opens in new tab)</span></a></li>
+                <li><a href="#contact" class="nav__cta">Get in Touch</a></li>
             </ul>
         </div>
     </nav>
@@ -1427,61 +508,55 @@
         <section class="hero" aria-labelledby="hero-title">
             <div class="container hero__inner">
                 <div class="hero__content">
-                    <span class="hero__eyebrow">Arts Executive</span>
+                    <span class="hero__eyebrow">Eugene, Oregon</span>
                     <h1 class="hero__title" id="hero-title">
                         Evynne <span class="hero__title-highlight">Hollens</span>
                     </h1>
-                    <p class="hero__subtitle">
-                        Where vision meets artistry—building audiences, shaping culture, and bringing stories to life.
+                    <p class="hero__roles">
+                        Arts Executive <span>•</span> Programming Leader <span>•</span> Creative Director
                     </p>
                     <p class="hero__description">
-                        Programming director and creative leader with 15+ years building arts organizations, directing productions, and cultivating community through the transformative power of performance.
+                        Building audiences, shaping culture, and bringing stories to life. 15+ years of programming experience, board governance, and community arts leadership.
                     </p>
-
                     <div class="hero__cta">
                         <a href="#contact" class="btn btn--primary">
                             <svg class="icon"><use href="#icon-mail"/></svg>
-                            Get in Touch
+                            Schedule Consultation
                         </a>
-                        <a href="resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener" aria-label="View Resume (opens in new tab)">
+                        <a href="resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener">
                             <svg class="icon"><use href="#icon-download"/></svg>
-                            View Resume
+                            Resume
                             <span class="visually-hidden">(opens in new tab)</span>
                         </a>
                     </div>
-
                     <ul class="hero__stats">
-                        <li class="stat">
-                            <span class="stat__value">15+</span>
-                            <span class="stat__label">Years Experience</span>
-                        </li>
-                        <li class="stat">
-                            <span class="stat__value">200+</span>
-                            <span class="stat__label">Productions</span>
-                        </li>
-                        <li class="stat">
-                            <span class="stat__value">1M+</span>
-                            <span class="stat__label">Subscribers</span>
-                        </li>
+                        <li class="stat"><span class="stat__value">15+</span><span class="stat__label">Years Leadership</span></li>
+                        <li class="stat"><span class="stat__value">11</span><span class="stat__label">Years at Shedd</span></li>
+                        <li class="stat"><span class="stat__value">58M+</span><span class="stat__label">YouTube Views</span></li>
                     </ul>
+                    <div class="hero__credentials">
+                        <span class="credential-tag"><svg class="icon icon--sm"><use href="#icon-check"/></svg> AEA Member</span>
+                        <span class="credential-tag"><svg class="icon icon--sm"><use href="#icon-globe"/></svg> Bilingual (Spanish)</span>
+                        <span class="credential-tag"><svg class="icon icon--sm"><use href="#icon-graduation"/></svg> University of Oregon</span>
+                    </div>
                 </div>
-
                 <div class="hero__image-col">
                     <div class="hero__image-container">
-                        <img
-                            src="headshot.jpg"
-                            srcset="headshot.jpg 506w"
-                            sizes="(max-width: 900px) 280px, 380px"
-                            alt="Evynne Hollens, professional headshot"
-                            class="hero__image"
-                            width="506"
-                            height="760"
-                            loading="eager"
-                            decoding="async"
-                            fetchpriority="high"
-                        >
-                        <span class="hero__image-label">Eugene, Oregon</span>
+                        <img src="headshot.jpg" srcset="headshot.jpg 506w" sizes="(max-width: 900px) 280px, 380px" alt="Evynne Hollens, professional headshot" class="hero__image" width="506" height="760" loading="eager" decoding="async" fetchpriority="high">
+                        <span class="hero__image-label">Photo by Jay Eads</span>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Philosophy -->
+        <section class="philosophy" aria-labelledby="philosophy-title">
+            <div class="container">
+                <div class="philosophy__inner">
+                    <h2 id="philosophy-title" class="visually-hidden">Leadership Philosophy</h2>
+                    <p class="philosophy__quote">
+                        I prioritize process over product and value relationship building and artistic integrity while still reaching for highest excellence. I take a collaborative approach while maintaining focus on what is productive, cost-effective, and beneficial to the project and people involved.
+                    </p>
                 </div>
             </div>
         </section>
@@ -1490,213 +565,266 @@
         <section id="leadership" class="leadership" aria-labelledby="leadership-title">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-label">Leadership</span>
+                    <span class="section-label">Leadership & Experience</span>
                     <h2 id="leadership-title">Building Arts Organizations</h2>
                     <p class="section-intro">
-                        A track record of strengthening institutions through strategic programming, audience development, and sustainable growth.
+                        A track record of strengthening institutions through strategic programming, audience development, and sustainable growth initiatives.
                     </p>
                 </div>
 
                 <div class="leadership-grid">
                     <article class="leadership-card featured">
-                        <div class="leadership-card__icon">
-                            <svg class="icon"><use href="#icon-theater"/></svg>
-                        </div>
-                        <h3>Programming & Artistic Director</h3>
-                        <p class="leadership-card__org">The Shedd Institute for the Arts</p>
-                        <p>Designed and executed 40+ annual performances, growing ticket revenue by 35% while expanding community access programs.</p>
-                    </article>
-
-                    <article class="leadership-card">
-                        <div class="leadership-card__icon">
-                            <svg class="icon"><use href="#icon-star"/></svg>
-                        </div>
-                        <h3>Board Member</h3>
-                        <p class="leadership-card__org">Eugene Ballet</p>
-                        <p>Contributing to strategic governance and community engagement for one of Oregon's premier dance companies.</p>
+                        <div class="leadership-card__icon"><svg class="icon"><use href="#icon-music"/></svg></div>
+                        <span class="leadership-card__duration">11 Years</span>
+                        <h3>Creator, Producer & Artistic Director</h3>
+                        <p class="leadership-card__org">The Shedd Institute — Contemporary Songbook Project</p>
+                        <p>Created and led an 11-year concert series reimagining the American Songbook for modern audiences.</p>
+                        <ul class="leadership-card__highlights">
+                            <li>Engaged Broadway and regional performers</li>
+                            <li>Built and managed production teams</li>
+                            <li>Shaped audience development strategy</li>
+                            <li>Developed administrative infrastructure</li>
+                        </ul>
                     </article>
 
                     <article class="leadership-card featured">
-                        <div class="leadership-card__icon">
-                            <svg class="icon"><use href="#icon-music"/></svg>
-                        </div>
-                        <h3>Creator & Director</h3>
-                        <p class="leadership-card__org">The Contemporary Songbook Project</p>
-                        <p>Conceived and launched an innovative concert series reimagining the American Songbook for modern audiences.</p>
+                        <div class="leadership-card__icon"><svg class="icon"><use href="#icon-ship"/></svg></div>
+                        <span class="leadership-card__duration">4 Years</span>
+                        <h3>Co-Creator & Featured Performer</h3>
+                        <p class="leadership-card__org">Royal Caribbean Productions</p>
+                        <p>Created <em>Voices</em>, an innovative hybrid live/virtual a cappella experience performed internationally.</p>
+                        <ul class="leadership-card__highlights">
+                            <li>Developed original variety shows</li>
+                            <li>Performed on multiple cruise ships</li>
+                            <li>International audience engagement</li>
+                        </ul>
                     </article>
 
                     <article class="leadership-card">
-                        <div class="leadership-card__icon">
-                            <svg class="icon"><use href="#icon-users"/></svg>
-                        </div>
-                        <h3>Production Manager</h3>
-                        <p class="leadership-card__org">University of Oregon</p>
-                        <p>Oversaw production operations for the School of Music and Dance, managing complex multi-venue seasons.</p>
+                        <div class="leadership-card__icon"><svg class="icon"><use href="#icon-star"/></svg></div>
+                        <h3>Board Member</h3>
+                        <p class="leadership-card__org">Eugene Ballet</p>
+                        <p>Contributing to strategic planning, governance, fiduciary responsibility, and community partnership cultivation for one of Oregon's premier dance companies.</p>
                     </article>
+
+                    <article class="leadership-card">
+                        <div class="leadership-card__icon"><svg class="icon"><use href="#icon-users"/></svg></div>
+                        <h3>Host — Family Concert Series</h3>
+                        <p class="leadership-card__org">Eugene Symphony</p>
+                        <p>Engaging young audiences and families through accessible, educational concert programming.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Core Competencies -->
+        <section class="competencies" aria-labelledby="competencies-title">
+            <div class="container">
+                <div class="section-header section-header--center">
+                    <span class="section-label">Core Competencies</span>
+                    <h2 id="competencies-title">What I Bring</h2>
+                </div>
+                <div class="competencies-grid">
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-calendar"/></svg></div>
+                        <h4>Programming & Curation</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-theater"/></svg></div>
+                        <h4>Production Management</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-users"/></svg></div>
+                        <h4>Relationship Building</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-star"/></svg></div>
+                        <h4>Team Leadership</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-target"/></svg></div>
+                        <h4>Strategic Planning</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-dollar"/></svg></div>
+                        <h4>Fundraising & Grants</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-shield"/></svg></div>
+                        <h4>Equity & Inclusion</h4>
+                    </div>
+                    <div class="competency-card">
+                        <div class="competency-card__icon"><svg class="icon"><use href="#icon-globe"/></svg></div>
+                        <h4>Community Engagement</h4>
+                    </div>
                 </div>
             </div>
         </section>
 
         <div class="section-divider"></div>
 
-        <!-- Creative -->
-        <section id="creative" class="creative" aria-labelledby="creative-title">
+        <!-- Mija -->
+        <section id="mija" class="mija" aria-labelledby="mija-title">
             <div class="container">
-                <div class="section-header section-header--center">
-                    <span class="section-label">Creative Work</span>
-                    <h2 id="creative-title">Stories That Resonate</h2>
-                    <p class="section-intro">
-                        From writing original musicals to producing digital content, creating work that connects with audiences on a personal level.
-                    </p>
+                <div class="section-header">
+                    <span class="section-label">Original Work</span>
+                    <h2 id="mija-title">Mija: A New Musical</h2>
                 </div>
+                <div class="mija__content">
+                    <div class="mija__info">
+                        <h3>Co-Creator, Writer & Producer</h3>
+                        <p class="mija__tagline">A story of identity, heritage, and belonging across generations.</p>
+                        <p class="mija__description">Over 9 years of development across 6 cities with 100+ collaborating artists, <em>Mija</em> explores the complexities of bicultural identity through music and story.</p>
 
-                <div class="creative-grid">
-                    <article class="creative-card">
-                        <div class="creative-card__visual">
-                            <svg class="icon icon--lg"><use href="#icon-theater"/></svg>
+                        <div class="mija__team">
+                            <h4>Creative Team</h4>
+                            <ul class="mija__team-list">
+                                <li><strong>Book:</strong> Evynne Hollens & Rebecca Touriño Collinsworth</li>
+                                <li><strong>Music & Lyrics:</strong> Anna Gilbert</li>
+                                <li><strong>Music, Lyrics & Translations:</strong> Gaby Moreno (Grammy Award Winner)</li>
+                            </ul>
                         </div>
-                        <div class="creative-card__content">
-                            <span class="creative-card__tag">Musical Theater</span>
-                            <h3>Mija: A New Musical</h3>
-                            <p>Co-writer of an original musical exploring identity, heritage, and belonging across generations.</p>
-                            <span class="creative-card__status">Coming soon</span>
-                        </div>
-                    </article>
 
-                    <article class="creative-card">
-                        <div class="creative-card__visual">
-                            <svg class="icon icon--lg"><use href="#icon-music"/></svg>
+                        <div class="mija__partners">
+                            <h4>Development Partners</h4>
+                            <div class="mija__partners-list">
+                                <span class="partner-tag">Paramount Theatre (Chicago)</span>
+                                <span class="partner-tag">Teatro Nacional (Guatemala)</span>
+                                <span class="partner-tag">NYC Readings</span>
+                                <span class="partner-tag">Seattle Workshops</span>
+                                <span class="partner-tag">LA Development</span>
+                            </div>
                         </div>
-                        <div class="creative-card__content">
-                            <span class="creative-card__tag">Concert Series</span>
-                            <h3>Contemporary Songbook</h3>
-                            <p>A fresh approach to the Great American Songbook, featuring contemporary arrangements.</p>
-                            <span class="creative-card__status">Coming soon</span>
-                        </div>
-                    </article>
+                    </div>
 
-                    <article class="creative-card">
-                        <div class="creative-card__visual">
-                            <svg class="icon icon--lg"><use href="#icon-youtube"/></svg>
+                    <div class="mija__awards">
+                        <h4>Recognition & Awards</h4>
+                        <div class="award-item">
+                            <span class="award-item__icon"></span>
+                            <div class="award-item__info">
+                                <strong>NAMT Festival of New Musicals</strong>
+                                <span>Official Selection, 2023</span>
+                            </div>
                         </div>
-                        <div class="creative-card__content">
-                            <span class="creative-card__tag">Performance</span>
-                            <h3>Vocal Artist</h3>
-                            <p>Bringing warmth and storytelling to classic and contemporary repertoire.</p>
-                            <a href="https://www.youtube.com/evynnehollens" class="creative-card__link" target="_blank" rel="noopener" aria-label="Watch Evynne Hollens on YouTube (opens in new tab)">
-                                Watch on YouTube
-                                <svg class="icon"><use href="#icon-arrow-right"/></svg>
-                                <span class="visually-hidden">(opens in new tab)</span>
-                            </a>
+                        <div class="award-item">
+                            <span class="award-item__icon"></span>
+                            <div class="award-item__info">
+                                <strong>Kleban Prize</strong>
+                                <span>Finalist, 2024</span>
+                            </div>
                         </div>
-                    </article>
+                        <div class="award-item">
+                            <span class="award-item__icon"></span>
+                            <div class="award-item__info">
+                                <strong>Eugene O'Neill Conference</strong>
+                                <span>Semi-Finalist</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Theater -->
-        <section id="theater" class="theater" aria-labelledby="theater-title">
+        <section id="theater" class="theater-section" aria-labelledby="theater-title">
             <div class="container">
                 <div class="section-header">
                     <span class="section-label">Theater</span>
-                    <h2 id="theater-title">A Life on Stage</h2>
-                    <p class="section-intro">
-                        Two decades of professional theater across musical, dramatic, and concert stages.
-                    </p>
+                    <h2 id="theater-title">Selected Stage Credits</h2>
+                    <p class="section-intro">Two decades of professional theater across Broadway, regional, and concert stages.</p>
                 </div>
 
-                <div class="theater-content">
-                    <ul class="theater-highlights">
-                        <li>
-                            <div class="theater-highlight">
-                                <span class="theater-highlight__icon" aria-hidden="true"></span>
-                                <div class="theater-highlight__info">
-                                    <h4>Maria</h4>
-                                    <span>The Sound of Music</span>
-                                </div>
-                            </div>
+                <div class="theater-grid">
+                    <div class="theater-card broadway">
+                        <span class="theater-card__year">Broadway 2017</span>
+                        <h4>Featured Performer</h4>
+                        <p class="theater-card__show">Home for the Holidays</p>
+                        <p class="theater-card__venue">August Wilson Theatre, New York</p>
+                    </div>
+                    <div class="theater-card">
+                        <span class="theater-card__year">2016</span>
+                        <h4>Cathy</h4>
+                        <p class="theater-card__show">The Last Five Years</p>
+                        <p class="theater-card__venue">The Shedd Institute</p>
+                    </div>
+                    <div class="theater-card">
+                        <span class="theater-card__year">2013</span>
+                        <h4>Lucy</h4>
+                        <p class="theater-card__show">Avenue Q</p>
+                        <p class="theater-card__venue">The Shedd Institute</p>
+                    </div>
+                    <div class="theater-card">
+                        <span class="theater-card__year">2013</span>
+                        <h4>Natalie</h4>
+                        <p class="theater-card__show">Next to Normal</p>
+                        <p class="theater-card__venue">Oregon Contemporary Theatre</p>
+                    </div>
+                    <div class="theater-card">
+                        <h4>Maria</h4>
+                        <p class="theater-card__show">The Sound of Music</p>
+                    </div>
+                    <div class="theater-card">
+                        <h4>Cinderella</h4>
+                        <p class="theater-card__show">Into the Woods</p>
+                    </div>
+                    <div class="theater-card">
+                        <h4>Laurey Williams</h4>
+                        <p class="theater-card__show">Oklahoma!</p>
+                    </div>
+                    <div class="theater-card">
+                        <h4>Nanette</h4>
+                        <p class="theater-card__show">No, No, Nanette</p>
+                        <p class="theater-card__venue">The Shedd Institute</p>
+                    </div>
+                </div>
+
+                <div class="theater-affiliations">
+                    <h3>Professional Affiliations & Education</h3>
+                    <ul class="affiliation-list">
+                        <li class="affiliation-item">
+                            <span class="affiliation-item__icon"><svg class="icon icon--sm"><use href="#icon-check"/></svg></span>
+                            <span>Actors' Equity Association (AEA)</span>
                         </li>
-                        <li>
-                            <div class="theater-highlight">
-                                <span class="theater-highlight__icon" aria-hidden="true"></span>
-                                <div class="theater-highlight__info">
-                                    <h4>Cinderella</h4>
-                                    <span>Into the Woods</span>
-                                </div>
-                            </div>
+                        <li class="affiliation-item">
+                            <span class="affiliation-item__icon"><svg class="icon icon--sm"><use href="#icon-graduation"/></svg></span>
+                            <span>University of Oregon, BA Music</span>
                         </li>
-                        <li>
-                            <div class="theater-highlight">
-                                <span class="theater-highlight__icon" aria-hidden="true"></span>
-                                <div class="theater-highlight__info">
-                                    <h4>Laurey Williams</h4>
-                                    <span>Oklahoma!</span>
-                                </div>
-                            </div>
+                        <li class="affiliation-item">
+                            <span class="affiliation-item__icon"><svg class="icon icon--sm"><use href="#icon-music"/></svg></span>
+                            <span>Divisi A Cappella (Pitch Perfect inspiration)</span>
                         </li>
-                        <li>
-                            <div class="theater-highlight">
-                                <span class="theater-highlight__icon" aria-hidden="true"></span>
-                                <div class="theater-highlight__info">
-                                    <h4>Marian Paroo</h4>
-                                    <span>The Music Man</span>
-                                </div>
-                            </div>
+                        <li class="affiliation-item">
+                            <span class="affiliation-item__icon"><svg class="icon icon--sm"><use href="#icon-globe"/></svg></span>
+                            <span>Bilingual: English & Spanish (fluent)</span>
                         </li>
                     </ul>
-
-                    <div class="theater-affiliations">
-                        <h3>Professional Affiliations</h3>
-                        <ul class="affiliation-list">
-                            <li class="affiliation-item">
-                                <span class="affiliation-item__icon">
-                                    <svg class="icon icon--sm"><use href="#icon-check"/></svg>
-                                </span>
-                                <span>Actors' Equity Association</span>
-                            </li>
-                            <li class="affiliation-item">
-                                <span class="affiliation-item__icon">
-                                    <svg class="icon icon--sm"><use href="#icon-graduation"/></svg>
-                                </span>
-                                <span>University of Oregon, BA Music</span>
-                            </li>
-                            <li class="affiliation-item">
-                                <span class="affiliation-item__icon">
-                                    <svg class="icon icon--sm"><use href="#icon-building"/></svg>
-                                </span>
-                                <span>Oregon Arts Commission</span>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </section>
 
         <div class="section-divider"></div>
 
-        <!-- Digital -->
-        <section id="digital" class="digital" aria-labelledby="digital-title">
+        <!-- Media/Digital -->
+        <section id="media" class="digital" aria-labelledby="media-title">
             <div class="container">
                 <div class="section-header section-header--center">
-                    <span class="section-label">Digital Presence</span>
-                    <h2 id="digital-title">Reaching Global Audiences</h2>
-                    <p class="section-intro">
-                        Building community beyond the stage through thoughtful digital content creation.
-                    </p>
+                    <span class="section-label">Media & Content</span>
+                    <h2 id="media-title">Digital Presence</h2>
+                    <p class="section-intro">Building community beyond the stage through thoughtful content creation.</p>
                 </div>
 
                 <div class="digital-stats">
                     <div class="stat-card">
-                        <span class="stat-card__value">1M+</span>
-                        <span class="stat-card__label">YouTube Subscribers</span>
+                        <span class="stat-card__value">58M+</span>
+                        <span class="stat-card__label">YouTube Views</span>
                     </div>
                     <div class="stat-card">
-                        <span class="stat-card__value">100M+</span>
-                        <span class="stat-card__label">Video Views</span>
+                        <span class="stat-card__value">115K</span>
+                        <span class="stat-card__label">Monthly Spotify Listeners</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-card__value">200+</span>
-                        <span class="stat-card__label">Original Videos</span>
+                        <span class="stat-card__label">Music Videos</span>
                     </div>
                     <div class="stat-card">
                         <span class="stat-card__value">10+</span>
@@ -1704,131 +832,146 @@
                     </div>
                 </div>
 
-                <div class="digital-platforms">
-                    <a href="https://www.youtube.com/evynnehollens" class="platform-card" target="_blank" rel="noopener" aria-label="YouTube (opens in new tab)">
-                        <span class="platform-card__icon">
-                            <svg class="icon"><use href="#icon-youtube"/></svg>
-                        </span>
-                        <span class="platform-card__name">YouTube</span>
-                        <span class="visually-hidden">(opens in new tab)</span>
-                    </a>
-                    <a href="https://www.instagram.com/evynnehollens" class="platform-card" target="_blank" rel="noopener" aria-label="Instagram (opens in new tab)">
-                        <span class="platform-card__icon">
-                            <svg class="icon"><use href="#icon-instagram"/></svg>
-                        </span>
-                        <span class="platform-card__name">Instagram</span>
-                        <span class="visually-hidden">(opens in new tab)</span>
-                    </a>
-                    <a href="https://open.spotify.com/artist/3nj3MfJCFFoKiRkAOW1R8c" class="platform-card" target="_blank" rel="noopener" aria-label="Spotify (opens in new tab)">
-                        <span class="platform-card__icon">
-                            <svg class="icon"><use href="#icon-spotify"/></svg>
-                        </span>
-                        <span class="platform-card__name">Spotify</span>
-                        <span class="visually-hidden">(opens in new tab)</span>
-                    </a>
-                    <a href="https://www.patreon.com/evynnehollens" class="platform-card" target="_blank" rel="noopener" aria-label="Patreon (opens in new tab)">
-                        <span class="platform-card__icon">
-                            <svg class="icon"><use href="#icon-heart"/></svg>
-                        </span>
-                        <span class="platform-card__name">Patreon</span>
-                        <span class="visually-hidden">(opens in new tab)</span>
-                    </a>
-                    <a href="https://www.facebook.com/EvynneHollensMusic" class="platform-card" target="_blank" rel="noopener" aria-label="Facebook (opens in new tab)">
-                        <span class="platform-card__icon">
-                            <svg class="icon"><use href="#icon-facebook"/></svg>
-                        </span>
-                        <span class="platform-card__name">Facebook</span>
-                        <span class="visually-hidden">(opens in new tab)</span>
-                    </a>
-                    <a href="https://x.com/evynnehollens" class="platform-card" target="_blank" rel="noopener" aria-label="X / Twitter (opens in new tab)">
-                        <span class="platform-card__icon">
-                            <svg class="icon"><use href="#icon-twitter"/></svg>
-                        </span>
-                        <span class="platform-card__name">X / Twitter</span>
-                        <span class="visually-hidden">(opens in new tab)</span>
-                    </a>
+                <div class="digital-content">
+                    <div class="digital-section">
+                        <h3><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</h3>
+                        <p>Bi-weekly releases featuring Broadway covers, Disney Evolution series, vocal tutorials, and collaborations.</p>
+                        <ul class="digital-highlights">
+                            <li><span>Disney Evolution Series</span> <strong>14M+ views</strong></li>
+                            <li><span>Broadway Covers</span> <strong>Popular series</strong></li>
+                            <li><span>Vocal Tutorials</span> <strong>Free education</strong></li>
+                        </ul>
+                        <div class="digital-platforms">
+                            <a href="https://www.youtube.com/evynnehollens" class="platform-link" target="_blank" rel="noopener">
+                                <svg class="icon icon--sm"><use href="#icon-youtube"/></svg> YouTube
+                                <span class="visually-hidden">(opens in new tab)</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="digital-section">
+                        <h3><svg class="icon"><use href="#icon-spotify"/></svg> Streaming</h3>
+                        <p>Original recordings and covers available on all major platforms.</p>
+                        <ul class="digital-highlights">
+                            <li><span>At the Beginning</span> <strong>9.2M streams</strong></li>
+                            <li><span>Once Upon A Dream</span> <strong>Album</strong></li>
+                            <li><span>Never Enough Broadway</span> <strong>Album</strong></li>
+                        </ul>
+                        <div class="digital-platforms">
+                            <a href="https://open.spotify.com/artist/3nj3MfJCFFoKiRkAOW1R8c" class="platform-link" target="_blank" rel="noopener">
+                                <svg class="icon icon--sm"><use href="#icon-spotify"/></svg> Spotify
+                                <span class="visually-hidden">(opens in new tab)</span>
+                            </a>
+                            <a href="https://www.instagram.com/evynnehollens" class="platform-link" target="_blank" rel="noopener">
+                                <svg class="icon icon--sm"><use href="#icon-instagram"/></svg> Instagram
+                                <span class="visually-hidden">(opens in new tab)</span>
+                            </a>
+                            <a href="https://www.patreon.com/evynnehollens" class="platform-link" target="_blank" rel="noopener">
+                                <svg class="icon icon--sm"><use href="#icon-heart"/></svg> Patreon
+                                <span class="visually-hidden">(opens in new tab)</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Press -->
-        <section id="press" class="press" aria-labelledby="press-title">
+        <section class="press" aria-labelledby="press-title">
             <div class="container">
                 <div class="section-header section-header--center">
-                    <span class="section-label">Recognition</span>
-                    <h2 id="press-title">What People Are Saying</h2>
+                    <span class="section-label">Press & Publications</span>
+                    <h2 id="press-title">Featured In</h2>
                 </div>
-
                 <div class="press-grid">
-                    <blockquote class="press-item">
-                        <cite class="press-item__source">Eugene Weekly</cite>
-                        <p class="press-item__quote">"A powerhouse of artistic vision and community building."</p>
-                    </blockquote>
-                    <blockquote class="press-item">
-                        <cite class="press-item__source">The Register-Guard</cite>
-                        <p class="press-item__quote">"Hollens brings both artistic excellence and strategic clarity to every project."</p>
-                    </blockquote>
-                    <blockquote class="press-item">
-                        <cite class="press-item__source">Oregon Arts Watch</cite>
-                        <p class="press-item__quote">"An essential voice in Oregon's arts leadership landscape."</p>
-                    </blockquote>
+                    <div class="press-item">
+                        <p class="press-item__logo">The New York Times</p>
+                        <p class="press-item__context">Broadway review</p>
+                    </div>
+                    <div class="press-item">
+                        <p class="press-item__logo">The Hollywood Reporter</p>
+                        <p class="press-item__context">Theater coverage</p>
+                    </div>
+                    <div class="press-item">
+                        <p class="press-item__logo">The Verge</p>
+                        <p class="press-item__context">Creator economy feature</p>
+                    </div>
+                    <div class="press-item">
+                        <p class="press-item__logo">Pitch Perfect</p>
+                        <p class="press-item__context">Book feature — first word, first chapter</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <div class="section-divider"></div>
 
+        <!-- Coaching -->
+        <section id="coaching" class="coaching" aria-labelledby="coaching-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Vocal Coaching</span>
+                    <h2 id="coaching-title">Singing for Real</h2>
+                </div>
+                <div class="coaching__content">
+                    <div class="coaching__info">
+                        <h3>Private Coaching & Workshops</h3>
+                        <p class="coaching__tagline">Helping singers find their authentic voice</p>
+                        <ul class="coaching__offerings">
+                            <li>
+                                <svg class="icon icon--sm"><use href="#icon-mic"/></svg>
+                                <span><strong>Private Coaching</strong> — In-person (Eugene) or remote sessions</span>
+                            </li>
+                            <li>
+                                <svg class="icon icon--sm"><use href="#icon-graduation"/></svg>
+                                <span><strong>University Masterclasses</strong> — Workshops for music programs</span>
+                            </li>
+                            <li>
+                                <svg class="icon icon--sm"><use href="#icon-users"/></svg>
+                                <span><strong>Group Workshops</strong> — Choirs and a cappella groups</span>
+                            </li>
+                            <li>
+                                <svg class="icon icon--sm"><use href="#icon-play"/></svg>
+                                <span><strong>YouTube Tutorials</strong> — Free educational video library</span>
+                            </li>
+                        </ul>
+                        <div class="coaching__cta">
+                            <a href="#contact" class="btn btn--primary">Schedule a Session</a>
+                        </div>
+                    </div>
+                    <div class="coaching__sidebar">
+                        <h4>Approach</h4>
+                        <p>I believe in meeting singers where they are and helping them develop technique that serves their unique voice and artistic goals. Whether you're preparing for an audition, working on a recording, or simply want to sing with more confidence, I'm here to help.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Contact -->
         <section id="contact" class="contact" aria-labelledby="contact-title">
             <div class="container">
                 <h2 id="contact-title">Let's Create Something Together</h2>
                 <p>
-                    Whether you're looking to collaborate, discuss programming opportunities, or explore partnerships—I'd love to hear from you.
+                    Whether you're looking to discuss leadership opportunities, collaborate on a project, or book a coaching session—I'd love to hear from you.
                 </p>
-
                 <div class="contact-cta">
-                    <a href="mailto:contact@hollensarts.com" class="btn btn--primary">
+                    <a href="mailto:evynne@hollensinc.com" class="btn btn--primary">
                         <svg class="icon"><use href="#icon-mail"/></svg>
                         Send an Email
                     </a>
-                    <a href="resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener" aria-label="Download Resume (opens in new tab)">
+                    <a href="resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener">
                         <svg class="icon"><use href="#icon-download"/></svg>
                         Download Resume
                         <span class="visually-hidden">(opens in new tab)</span>
                     </a>
                 </div>
-
                 <ul class="social-links" aria-label="Social media links">
-                    <li>
-                        <a href="https://www.youtube.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="YouTube (opens in new tab)">
-                            <svg class="icon"><use href="#icon-youtube"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="Instagram (opens in new tab)">
-                            <svg class="icon"><use href="#icon-instagram"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://open.spotify.com/artist/3nj3MfJCFFoKiRkAOW1R8c" class="social-link" target="_blank" rel="noopener" aria-label="Spotify (opens in new tab)">
-                            <svg class="icon"><use href="#icon-spotify"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/EvynneHollensMusic" class="social-link" target="_blank" rel="noopener" aria-label="Facebook (opens in new tab)">
-                            <svg class="icon"><use href="#icon-facebook"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="X / Twitter (opens in new tab)">
-                            <svg class="icon"><use href="#icon-twitter"/></svg>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.patreon.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="Patreon (opens in new tab)">
-                            <svg class="icon"><use href="#icon-heart"/></svg>
-                        </a>
-                    </li>
+                    <li><a href="https://www.youtube.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="YouTube (opens in new tab)"><svg class="icon"><use href="#icon-youtube"/></svg></a></li>
+                    <li><a href="https://www.instagram.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="Instagram (opens in new tab)"><svg class="icon"><use href="#icon-instagram"/></svg></a></li>
+                    <li><a href="https://open.spotify.com/artist/3nj3MfJCFFoKiRkAOW1R8c" class="social-link" target="_blank" rel="noopener" aria-label="Spotify (opens in new tab)"><svg class="icon"><use href="#icon-spotify"/></svg></a></li>
+                    <li><a href="https://www.facebook.com/EvynneHollensMusic" class="social-link" target="_blank" rel="noopener" aria-label="Facebook (opens in new tab)"><svg class="icon"><use href="#icon-facebook"/></svg></a></li>
+                    <li><a href="https://x.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="X / Twitter (opens in new tab)"><svg class="icon"><use href="#icon-twitter"/></svg></a></li>
+                    <li><a href="https://www.patreon.com/evynnehollens" class="social-link" target="_blank" rel="noopener" aria-label="Patreon (opens in new tab)"><svg class="icon"><use href="#icon-heart"/></svg></a></li>
                 </ul>
             </div>
         </section>
@@ -1847,19 +990,14 @@
     </button>
 
     <script>
-        // Dynamic copyright year
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Mobile menu toggle
         const mobileBtn = document.querySelector('.nav__mobile-btn');
         const navLinks = document.querySelector('.nav__links');
-
         mobileBtn.addEventListener('click', () => {
             const isOpen = navLinks.classList.toggle('active');
             mobileBtn.setAttribute('aria-expanded', isOpen);
         });
-
-        // Close menu on link click
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
@@ -1867,42 +1005,23 @@
             });
         });
 
-        // Combined scroll handler for nav and scroll-to-top
         const nav = document.querySelector('.nav');
         const scrollTopBtn = document.querySelector('.scroll-top');
-
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
-
-            // Nav scroll effect
-            if (scrollY > 50) {
-                nav.classList.add('scrolled');
-            } else {
-                nav.classList.remove('scrolled');
-            }
-
-            // Scroll to top button visibility
-            if (scrollY > 500) {
-                scrollTopBtn.classList.add('visible');
-            } else {
-                scrollTopBtn.classList.remove('visible');
-            }
+            if (scrollY > 50) { nav.classList.add('scrolled'); } else { nav.classList.remove('scrolled'); }
+            if (scrollY > 500) { scrollTopBtn.classList.add('visible'); } else { scrollTopBtn.classList.remove('visible'); }
         }, { passive: true });
 
-        scrollTopBtn.addEventListener('click', () => {
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        });
+        scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
-        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
                 if (href !== '#') {
                     e.preventDefault();
                     const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
+                    if (target) { target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
                 }
             });
         });
