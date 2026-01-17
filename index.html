@@ -14,6 +14,8 @@
     <meta property="og:title" content="Evynne Hollens – Arts Executive & Creative Leader">
     <meta property="og:description" content="Programming director and artistic leader with 15+ years building audiences, managing productions, and strengthening arts organizations.">
     <meta property="og:image" content="https://www.ehollens.com/headshot.jpg">
+    <meta property="og:image:width" content="506">
+    <meta property="og:image:height" content="760">
     <meta property="og:image:alt" content="Evynne Hollens, professional headshot">
 
     <meta name="twitter:card" content="summary_large_image">
@@ -23,15 +25,17 @@
 
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%23B86B4C' width='100' height='100' rx='50'/><text x='50' y='65' font-family='Georgia,serif' font-size='48' font-weight='400' fill='white' text-anchor='middle'>E</text></svg>">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
 
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Evynne Hollens","jobTitle":"Arts Executive & Programming Leader","description":"Arts executive with 15+ years of programming experience, board governance, and community arts leadership.","url":"https://www.ehollens.com","image":"https://www.ehollens.com/headshot.jpg","sameAs":["https://www.youtube.com/evynnehollens","https://www.instagram.com/evynnehollens","https://www.facebook.com/EvynneHollensMusic","https://x.com/evynnehollens","https://open.spotify.com/artist/3nj3MfJCFFoKiRkAOW1R8c","https://www.patreon.com/evynnehollens"],"address":{"@type":"PostalAddress","addressLocality":"Eugene","addressRegion":"OR","addressCountry":"US"},"knowsLanguage":["English","Spanish"]}</script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Source+Sans+3:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="preload" href="headshot.jpg" as="image" fetchpriority="high">
 
     <style>
-        :root { --color-bg: #FAF9F7; --color-bg-alt: #F5F3F0; --color-bg-elevated: #FFFFFF; --color-ink: #1F1D1B; --color-ink-secondary: #4A4744; --color-ink-tertiary: #635F5B; --color-accent: #B86B4C; --color-accent-hover: #9D5A3E; --color-accent-subtle: #B86B4C0D; --color-accent-light: #D4A08A; --color-accent-glow-15: rgba(184, 107, 76, 0.15); --color-accent-glow-20: rgba(184, 107, 76, 0.2); --color-on-accent: #FFFFFF; --color-gold: #C4A35A; --color-gold-glow-10: rgba(196, 163, 90, 0.1); --color-gold-glow-20: rgba(196, 163, 90, 0.2); --color-shine: rgba(255, 255, 255, 0.3); --color-bg-rgb: 250, 249, 247; --color-line: #E5E2DD; --color-line-subtle: #EFECE8; --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif; --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --space-3xs: 0.25rem; --space-2xs: 0.5rem; --space-xs: 0.75rem; --space-sm: 1rem; --space-md: 1.5rem; --space-lg: 2rem; --space-xl: 3rem; --space-2xl: 4.5rem; --space-3xl: 6rem; --space-4xl: 8rem; --max-width: 1180px; --content-width: 680px; --shadow-sm: 0 1px 2px rgba(31, 29, 27, 0.04); --shadow-md: 0 4px 12px rgba(31, 29, 27, 0.06); --shadow-lg: 0 12px 32px rgba(31, 29, 27, 0.08); --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px; --radius-full: 9999px; --transition-fast: 150ms ease; --transition-base: 250ms ease; --min-touch: 44px; --glow-color: rgba(184, 107, 76, 0.4); --aurora-1: #B86B4C; --aurora-2: #C4A35A; --aurora-3: #D4A08A; }
+        :root { --color-bg: #FAF9F7; --color-bg-alt: #F5F3F0; --color-bg-elevated: #FFFFFF; --color-ink: #1F1D1B; --color-ink-secondary: #4A4744; --color-ink-tertiary: #5A5652; --color-accent: #B86B4C; --color-accent-hover: #9D5A3E; --color-accent-subtle: #B86B4C0D; --color-accent-light: #D4A08A; --color-accent-glow-15: rgba(184, 107, 76, 0.15); --color-accent-glow-20: rgba(184, 107, 76, 0.2); --color-on-accent: #FFFFFF; --color-gold: #C4A35A; --color-gold-glow-10: rgba(196, 163, 90, 0.1); --color-gold-glow-20: rgba(196, 163, 90, 0.2); --color-shine: rgba(255, 255, 255, 0.3); --color-bg-rgb: 250, 249, 247; --color-line: #E5E2DD; --color-line-subtle: #EFECE8; --font-display: 'Playfair Display', Georgia, 'Times New Roman', serif; --font-body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; --space-3xs: 0.25rem; --space-2xs: 0.5rem; --space-xs: 0.75rem; --space-sm: 1rem; --space-md: 1.5rem; --space-lg: 2rem; --space-xl: 3rem; --space-2xl: 4.5rem; --space-3xl: 6rem; --space-4xl: 8rem; --max-width: 1180px; --content-width: 680px; --shadow-sm: 0 1px 2px rgba(31, 29, 27, 0.04); --shadow-md: 0 4px 12px rgba(31, 29, 27, 0.06); --shadow-lg: 0 12px 32px rgba(31, 29, 27, 0.08); --radius-sm: 4px; --radius-md: 8px; --radius-lg: 12px; --radius-full: 9999px; --transition-fast: 150ms ease; --transition-base: 250ms ease; --min-touch: 44px; --glow-color: rgba(184, 107, 76, 0.4); --aurora-1: #B86B4C; --aurora-2: #C4A35A; --aurora-3: #D4A08A; }
         *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
         html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
         :focus-visible { outline: 2px solid var(--color-accent); outline-offset: 3px; }
@@ -68,7 +72,7 @@
         .nav__cta::after { display: none; }
         .nav__mobile-btn { display: none; background: none; border: none; cursor: pointer; padding: var(--space-2xs); min-width: var(--min-touch); min-height: var(--min-touch); color: var(--color-ink); }
 
-        @media (max-width: 1000px) { .nav__links { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-bg); flex-direction: column; padding: var(--space-md); gap: 0; border-bottom: 1px solid var(--color-line); box-shadow: var(--shadow-lg); } .nav__links.active { display: flex; } .nav__links li { width: 100%; } .nav__link { width: 100%; padding: var(--space-sm); justify-content: center; border-bottom: 1px solid var(--color-line-subtle); } .nav__link::after { display: none; } .nav__mobile-btn { display: flex; align-items: center; justify-content: center; } }
+        @media (max-width: 1000px) { .nav__links { display: flex; position: absolute; top: 100%; left: 0; right: 0; background: var(--color-bg); flex-direction: column; padding: var(--space-md); gap: 0; border-bottom: 1px solid var(--color-line); box-shadow: var(--shadow-lg); opacity: 0; visibility: hidden; transform: translateY(-10px); transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s; } .nav__links.active { opacity: 1; visibility: visible; transform: translateY(0); } .nav__links li { width: 100%; } .nav__link { width: 100%; padding: var(--space-sm); justify-content: center; border-bottom: 1px solid var(--color-line-subtle); } .nav__link::after { display: none; } .nav__mobile-btn { display: flex; align-items: center; justify-content: center; } }
 
         .hero { min-height: 100vh; display: flex; align-items: center; padding: calc(80px + var(--space-2xl)) 0 var(--space-3xl); position: relative; }
         .hero::before { content: ''; position: absolute; top: 15%; right: 5%; width: 35%; height: 60%; background: linear-gradient(180deg, var(--color-accent-subtle) 0%, transparent 100%); border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%; filter: blur(60px); pointer-events: none; opacity: 0.8; }
@@ -248,26 +252,26 @@
         .scroll-top.visible { opacity: 1; visibility: visible; }
         .scroll-top:hover { background: var(--color-accent); transform: translateY(-2px); }
 
-        @media (prefers-color-scheme: dark) { :root { --color-bg: #18171A; --color-bg-alt: #1E1D20; --color-bg-elevated: #252428; --color-ink: #F4F3F1; --color-ink-secondary: #B8B5B0; --color-ink-tertiary: #9A9793; --color-bg-rgb: 24, 23, 26; --color-accent: #D4917A; --color-accent-hover: #E0A38E; --color-accent-subtle: #D4917A12; --color-accent-light: #E8C4B5; --color-accent-glow-15: rgba(212, 145, 122, 0.15); --color-accent-glow-20: rgba(212, 145, 122, 0.2); --color-gold-glow-10: rgba(196, 163, 90, 0.15); --color-gold-glow-20: rgba(196, 163, 90, 0.25); --color-shine: rgba(255, 255, 255, 0.15); --color-line: #353338; --color-line-subtle: #2A282D; } body::before { opacity: 0.02; } .nav__cta { background: var(--color-accent); } }
+        @media (prefers-color-scheme: dark) { :root { --color-bg: #18171A; --color-bg-alt: #1E1D20; --color-bg-elevated: #252428; --color-ink: #F4F3F1; --color-ink-secondary: #B8B5B0; --color-ink-tertiary: #A5A19D; --color-bg-rgb: 24, 23, 26; --color-accent: #D4917A; --color-accent-hover: #E0A38E; --color-accent-subtle: #D4917A12; --color-accent-light: #E8C4B5; --color-accent-glow-15: rgba(212, 145, 122, 0.15); --color-accent-glow-20: rgba(212, 145, 122, 0.2); --color-gold-glow-10: rgba(196, 163, 90, 0.15); --color-gold-glow-20: rgba(196, 163, 90, 0.25); --color-shine: rgba(255, 255, 255, 0.15); --color-line: #353338; --color-line-subtle: #2A282D; } body::before { opacity: 0.02; } .nav__cta { background: var(--color-accent); } }
 
         @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } html { scroll-behavior: auto; } }
         @media print { .nav, .scroll-top, .hero::before, body::before { display: none !important; } body { background: white; color: black; } section { padding: 1.5rem 0; } }
 
         .scroll-progress { position: fixed; top: 0; left: 0; width: 0%; height: 3px; background: linear-gradient(90deg, var(--color-accent), var(--color-gold)); z-index: 1000; transition: width 0.1s linear; }
         .aurora { position: absolute; top: 0; left: 0; right: 0; height: 100vh; overflow: hidden; pointer-events: none; z-index: 0; }
-        .aurora__blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.4; animation: auroraFloat 20s ease-in-out infinite; }
+        .aurora__blob { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.4; animation: auroraFloat 20s ease-in-out infinite; will-change: transform; }
         .aurora__blob--1 { width: 600px; height: 600px; background: radial-gradient(circle, var(--aurora-1) 0%, transparent 70%); top: -20%; right: -10%; }
         .aurora__blob--2 { width: 500px; height: 500px; background: radial-gradient(circle, var(--aurora-2) 0%, transparent 70%); top: 20%; right: 20%; animation-delay: -7s; animation-duration: 25s; }
         .aurora__blob--3 { width: 400px; height: 400px; background: radial-gradient(circle, var(--aurora-3) 0%, transparent 70%); top: 40%; right: -5%; animation-delay: -14s; animation-duration: 22s; }
         @keyframes auroraFloat { 0%, 100% { transform: translate(0, 0) scale(1); } 25% { transform: translate(-30px, 20px) scale(1.05); } 50% { transform: translate(20px, -30px) scale(0.95); } 75% { transform: translate(-20px, -20px) scale(1.02); } }
-        .hero__image-glow { position: absolute; inset: -20px; background: radial-gradient(ellipse at center, var(--glow-color) 0%, transparent 70%); filter: blur(40px); opacity: 0; animation: glowPulse 4s ease-in-out infinite, glowFadeIn 1s ease 0.8s forwards; z-index: 0; }
+        .hero__image-glow { position: absolute; inset: -20px; background: radial-gradient(ellipse at center, var(--glow-color) 0%, transparent 70%); filter: blur(40px); opacity: 0; animation: glowPulse 4s ease-in-out infinite, glowFadeIn 1s ease 0.8s forwards; z-index: 0; will-change: transform, opacity; }
         @keyframes glowPulse { 0%, 100% { opacity: 0.5; transform: scale(1); } 50% { opacity: 0.8; transform: scale(1.05); } }
         @keyframes glowFadeIn { to { opacity: 0.6; } }
         [data-magnetic] { position: relative; transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
         .nav__link, .digital-section a:not(.platform-link), .coaching__info a:not(.btn) { position: relative; background: linear-gradient(to right, var(--color-accent), var(--color-accent)) no-repeat; background-size: 0% 2px; background-position: left bottom; transition: background-size 0.3s cubic-bezier(0.16, 1, 0.3, 1); }
         .nav__link:hover, .digital-section a:not(.platform-link):hover { background-size: 100% 2px; }
         .sparkles { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
-        .sparkle { position: absolute; width: 4px; height: 4px; background: var(--color-gold); border-radius: 50%; opacity: 0; animation: sparkle 3s ease-in-out infinite; }
+        .sparkle { position: absolute; width: 4px; height: 4px; background: var(--color-gold); border-radius: 50%; opacity: 0; animation: sparkle 3s ease-in-out infinite; will-change: transform, opacity; }
         .sparkle:nth-child(1) { top: 20%; left: 10%; } .sparkle:nth-child(2) { top: 60%; left: 85%; animation-delay: 0.5s; } .sparkle:nth-child(3) { top: 30%; left: 70%; animation-delay: 1s; } .sparkle:nth-child(4) { top: 80%; left: 30%; animation-delay: 1.5s; } .sparkle:nth-child(5) { top: 10%; left: 50%; animation-delay: 2s; } .sparkle:nth-child(6) { top: 50%; left: 5%; animation-delay: 2.5s; }
         @keyframes sparkle { 0%, 100% { opacity: 0; transform: scale(0) translateY(0); } 50% { opacity: 1; transform: scale(1) translateY(-10px); } }
         .btn--primary { position: relative; overflow: hidden; z-index: 1; }
@@ -876,7 +880,7 @@
                             </li>
                         </ul>
                         <div class="coaching__cta">
-                            <a href="#contact" class="btn btn--primary">Schedule a Session</a>
+                            <a href="#contact" class="btn btn--primary" data-magnetic>Schedule a Session</a>
                         </div>
                     </div>
                     <div class="coaching__sidebar animate-slide-right">
@@ -894,11 +898,11 @@
                     Whether you're looking to discuss leadership opportunities, collaborate on a project, or book a coaching session—I'd love to hear from you.
                 </p>
                 <div class="contact-cta">
-                    <a href="mailto:evynne@hollensinc.com" class="btn btn--primary">
+                    <a href="mailto:evynne@hollensinc.com" class="btn btn--primary" data-magnetic>
                         <svg class="icon"><use href="#icon-mail"/></svg>
                         Send an Email
                     </a>
-                    <a href="resume.pdf" class="btn btn--secondary" target="_blank" rel="noopener">
+                    <a href="resume.pdf" class="btn btn--secondary" data-magnetic target="_blank" rel="noopener">
                         <svg class="icon"><use href="#icon-download"/></svg>
                         Download Resume
                         <span class="visually-hidden">(opens in new tab)</span>

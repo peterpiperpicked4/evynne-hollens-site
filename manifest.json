@@ -1,0 +1,17 @@
+{
+  "name": "Evynne Hollens - Arts Executive & Creative Leader",
+  "short_name": "Evynne Hollens",
+  "description": "Arts executive with 15+ years of programming experience, board governance, and community arts leadership.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF9F7",
+  "theme_color": "#B86B4C",
+  "icons": [
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
