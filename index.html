@@ -442,6 +442,166 @@
             body { background: white; color: black; }
             section { padding: 1.5rem 0; }
         }
+
+        /* ========== SCROLL ANIMATIONS ========== */
+
+        /* Base state for animated elements */
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(32px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-on-scroll.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stagger delays for grid children */
+        .stagger-children .animate-on-scroll:nth-child(1) { transition-delay: 0ms; }
+        .stagger-children .animate-on-scroll:nth-child(2) { transition-delay: 80ms; }
+        .stagger-children .animate-on-scroll:nth-child(3) { transition-delay: 160ms; }
+        .stagger-children .animate-on-scroll:nth-child(4) { transition-delay: 240ms; }
+        .stagger-children .animate-on-scroll:nth-child(5) { transition-delay: 320ms; }
+        .stagger-children .animate-on-scroll:nth-child(6) { transition-delay: 400ms; }
+        .stagger-children .animate-on-scroll:nth-child(7) { transition-delay: 480ms; }
+        .stagger-children .animate-on-scroll:nth-child(8) { transition-delay: 560ms; }
+
+        /* Hero entrance animations */
+        .hero__eyebrow,
+        .hero__title,
+        .hero__roles,
+        .hero__description,
+        .hero__cta,
+        .hero__stats,
+        .hero__credentials {
+            opacity: 0;
+            transform: translateY(24px);
+            animation: heroReveal 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+        }
+
+        .hero__eyebrow { animation-delay: 0.1s; }
+        .hero__title { animation-delay: 0.2s; }
+        .hero__roles { animation-delay: 0.3s; }
+        .hero__description { animation-delay: 0.4s; }
+        .hero__cta { animation-delay: 0.5s; }
+        .hero__stats { animation-delay: 0.6s; }
+        .hero__credentials { animation-delay: 0.7s; }
+
+        .hero__image-container {
+            opacity: 0;
+            transform: scale(0.95) translateY(20px);
+            animation: heroImageReveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards;
+        }
+
+        @keyframes heroReveal {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes heroImageReveal {
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Slide in from sides */
+        .animate-slide-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-slide-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-slide-left.is-visible,
+        .animate-slide-right.is-visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* Scale up animation */
+        .animate-scale {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .animate-scale.is-visible {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        /* Philosophy quote special animation */
+        .philosophy__quote {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .philosophy__quote.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Stats counter animation */
+        .stat-card__value,
+        .stat__value {
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .stat-card:hover .stat-card__value,
+        .stat:hover .stat__value {
+            transform: scale(1.05);
+        }
+
+        /* Section header animations */
+        .section-header {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+                        transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .section-header.is-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Respect reduced motion */
+        @media (prefers-reduced-motion: reduce) {
+            .animate-on-scroll,
+            .animate-slide-left,
+            .animate-slide-right,
+            .animate-scale,
+            .philosophy__quote,
+            .section-header,
+            .hero__eyebrow,
+            .hero__title,
+            .hero__roles,
+            .hero__description,
+            .hero__cta,
+            .hero__stats,
+            .hero__credentials,
+            .hero__image-container {
+                opacity: 1 !important;
+                transform: none !important;
+                animation: none !important;
+                transition: none !important;
+            }
+        }
     </style>
 </head>
 <body>
@@ -574,8 +734,8 @@
                     </p>
                 </div>
 
-                <div class="leadership-grid">
-                    <article class="leadership-card featured">
+                <div class="leadership-grid stagger-children">
+                    <article class="leadership-card featured animate-on-scroll">
                         <div class="leadership-card__icon"><svg class="icon"><use href="#icon-music"/></svg></div>
                         <span class="leadership-card__duration">11 Years</span>
                         <h3>Creator, Producer & Artistic Director</h3>
@@ -589,7 +749,7 @@
                         </ul>
                     </article>
 
-                    <article class="leadership-card featured">
+                    <article class="leadership-card featured animate-on-scroll">
                         <div class="leadership-card__icon"><svg class="icon"><use href="#icon-ship"/></svg></div>
                         <span class="leadership-card__duration">4 Years</span>
                         <h3>Co-Creator & Featured Performer</h3>
@@ -602,14 +762,14 @@
                         </ul>
                     </article>
 
-                    <article class="leadership-card">
+                    <article class="leadership-card animate-on-scroll">
                         <div class="leadership-card__icon"><svg class="icon"><use href="#icon-star"/></svg></div>
                         <h3>Board Member</h3>
                         <p class="leadership-card__org">Eugene Ballet</p>
                         <p>Contributing to strategic planning, governance, fiduciary responsibility, and community partnership cultivation for one of Oregon's premier dance companies.</p>
                     </article>
 
-                    <article class="leadership-card">
+                    <article class="leadership-card animate-on-scroll">
                         <div class="leadership-card__icon"><svg class="icon"><use href="#icon-users"/></svg></div>
                         <h3>Host — Family Concert Series</h3>
                         <p class="leadership-card__org">Eugene Symphony</p>
@@ -626,36 +786,36 @@
                     <span class="section-label">Core Competencies</span>
                     <h2 id="competencies-title">What I Bring</h2>
                 </div>
-                <div class="competencies-grid">
-                    <div class="competency-card">
+                <div class="competencies-grid stagger-children">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-calendar"/></svg></div>
                         <h4>Programming & Curation</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-theater"/></svg></div>
                         <h4>Production Management</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-users"/></svg></div>
                         <h4>Relationship Building</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-star"/></svg></div>
                         <h4>Team Leadership</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-target"/></svg></div>
                         <h4>Strategic Planning</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-dollar"/></svg></div>
                         <h4>Fundraising & Grants</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-shield"/></svg></div>
                         <h4>Equity & Inclusion</h4>
                     </div>
-                    <div class="competency-card">
+                    <div class="competency-card animate-on-scroll">
                         <div class="competency-card__icon"><svg class="icon"><use href="#icon-globe"/></svg></div>
                         <h4>Community Engagement</h4>
                     </div>
@@ -673,7 +833,7 @@
                     <h2 id="mija-title">Mija: A New Musical</h2>
                 </div>
                 <div class="mija__content">
-                    <div class="mija__info">
+                    <div class="mija__info animate-slide-left">
                         <h3>Co-Creator, Writer & Producer</h3>
                         <p class="mija__tagline">A story of identity, heritage, and belonging across generations.</p>
                         <p class="mija__description">Over 9 years of development across 6 cities with 100+ collaborating artists, <em>Mija</em> explores the complexities of bicultural identity through music and story.</p>
@@ -699,7 +859,7 @@
                         </div>
                     </div>
 
-                    <div class="mija__awards">
+                    <div class="mija__awards animate-slide-right">
                         <h4>Recognition & Awards</h4>
                         <div class="award-item">
                             <span class="award-item__icon"><svg class="icon icon--sm" width="18" height="18"><use href="#icon-award"/></svg></span>
@@ -784,7 +944,7 @@
                     </div>
                 </div>
 
-                <div class="theater-affiliations">
+                <div class="theater-affiliations animate-on-scroll">
                     <h3>Professional Affiliations & Education</h3>
                     <ul class="affiliation-list">
                         <li class="affiliation-item">
@@ -819,27 +979,27 @@
                     <p class="section-intro">Building community beyond the stage through thoughtful content creation.</p>
                 </div>
 
-                <div class="digital-stats">
-                    <div class="stat-card">
+                <div class="digital-stats stagger-children">
+                    <div class="stat-card animate-on-scroll">
                         <span class="stat-card__value">58M+</span>
                         <span class="stat-card__label">YouTube Views</span>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll">
                         <span class="stat-card__value">115K</span>
                         <span class="stat-card__label">Monthly Spotify Listeners</span>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll">
                         <span class="stat-card__value">200+</span>
                         <span class="stat-card__label">Music Videos</span>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card animate-on-scroll">
                         <span class="stat-card__value">10+</span>
                         <span class="stat-card__label">Years Creating</span>
                     </div>
                 </div>
 
                 <div class="digital-content">
-                    <div class="digital-section">
+                    <div class="digital-section animate-slide-left">
                         <h3><svg class="icon"><use href="#icon-youtube"/></svg> YouTube</h3>
                         <p>Bi-weekly releases featuring Broadway covers, Disney Evolution series, vocal tutorials, and collaborations.</p>
                         <ul class="digital-highlights">
@@ -855,7 +1015,7 @@
                         </div>
                     </div>
 
-                    <div class="digital-section">
+                    <div class="digital-section animate-slide-right">
                         <h3><svg class="icon"><use href="#icon-spotify"/></svg> Streaming</h3>
                         <p>Original recordings and covers available on all major platforms.</p>
                         <ul class="digital-highlights">
@@ -889,20 +1049,20 @@
                     <span class="section-label">Press & Publications</span>
                     <h2 id="press-title">Featured In</h2>
                 </div>
-                <div class="press-grid">
-                    <div class="press-item">
+                <div class="press-grid stagger-children">
+                    <div class="press-item animate-on-scroll">
                         <p class="press-item__logo">The New York Times</p>
                         <p class="press-item__context">Broadway review</p>
                     </div>
-                    <div class="press-item">
+                    <div class="press-item animate-on-scroll">
                         <p class="press-item__logo">The Hollywood Reporter</p>
                         <p class="press-item__context">Theater coverage</p>
                     </div>
-                    <div class="press-item">
+                    <div class="press-item animate-on-scroll">
                         <p class="press-item__logo">The Verge</p>
                         <p class="press-item__context">Creator economy feature</p>
                     </div>
-                    <div class="press-item">
+                    <div class="press-item animate-on-scroll">
                         <p class="press-item__logo">Pitch Perfect</p>
                         <p class="press-item__context">Book feature — first word, first chapter</p>
                     </div>
@@ -920,7 +1080,7 @@
                     <h2 id="coaching-title">Singing for Real</h2>
                 </div>
                 <div class="coaching__content">
-                    <div class="coaching__info">
+                    <div class="coaching__info animate-slide-left">
                         <h3>Private Coaching & Workshops</h3>
                         <p class="coaching__tagline">Helping singers find their authentic voice</p>
                         <ul class="coaching__offerings">
@@ -945,7 +1105,7 @@
                             <a href="#contact" class="btn btn--primary">Schedule a Session</a>
                         </div>
                     </div>
-                    <div class="coaching__sidebar">
+                    <div class="coaching__sidebar animate-slide-right">
                         <h4>Approach</h4>
                         <p>I believe in meeting singers where they are and helping them develop technique that serves their unique voice and artistic goals. Whether you're preparing for an audition, working on a recording, or simply want to sing with more confidence, I'm here to help.</p>
                     </div>
@@ -996,6 +1156,7 @@
     </button>
 
     <script>
+        // Mobile menu
         const mobileBtn = document.querySelector('.nav__mobile-btn');
         const navLinks = document.querySelector('.nav__links');
         mobileBtn.addEventListener('click', () => {
@@ -1009,6 +1170,7 @@
             });
         });
 
+        // Scroll effects
         const nav = document.querySelector('.nav');
         const scrollTopBtn = document.querySelector('.scroll-top');
         window.addEventListener('scroll', () => {
@@ -1019,6 +1181,7 @@
 
         scrollTopBtn.addEventListener('click', () => { window.scrollTo({ top: 0, behavior: 'smooth' }); });
 
+        // Smooth scroll for anchor links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 const href = this.getAttribute('href');
@@ -1029,6 +1192,94 @@
                 }
             });
         });
+
+        // ========== SCROLL ANIMATIONS ==========
+
+        // Check for reduced motion preference
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+        if (!prefersReducedMotion) {
+            // Intersection Observer for scroll animations
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px 0px -80px 0px',
+                threshold: 0.1
+            };
+
+            const animationObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+
+                        // Trigger counter animation for stat values
+                        if (entry.target.classList.contains('stat-card')) {
+                            animateCounter(entry.target.querySelector('.stat-card__value'));
+                        }
+
+                        // Unobserve after animation (one-time)
+                        animationObserver.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            // Observe all animated elements
+            const animatedElements = document.querySelectorAll(
+                '.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .philosophy__quote, .section-header'
+            );
+            animatedElements.forEach(el => animationObserver.observe(el));
+
+            // Counter animation for stats
+            function animateCounter(element) {
+                if (!element) return;
+
+                const text = element.textContent;
+                const hasPlus = text.includes('+');
+                const hasM = text.includes('M');
+                const hasK = text.includes('K');
+
+                // Extract the numeric value
+                let endValue = parseFloat(text.replace(/[^0-9.]/g, ''));
+                if (isNaN(endValue)) return;
+
+                const duration = 1500;
+                const startTime = performance.now();
+                const startValue = 0;
+
+                function easeOutQuart(t) {
+                    return 1 - Math.pow(1 - t, 4);
+                }
+
+                function updateCounter(currentTime) {
+                    const elapsed = currentTime - startTime;
+                    const progress = Math.min(elapsed / duration, 1);
+                    const easedProgress = easeOutQuart(progress);
+                    const currentValue = startValue + (endValue - startValue) * easedProgress;
+
+                    let displayValue;
+                    if (hasM) {
+                        displayValue = currentValue.toFixed(0) + 'M';
+                    } else if (hasK) {
+                        displayValue = currentValue.toFixed(0) + 'K';
+                    } else {
+                        displayValue = Math.floor(currentValue).toString();
+                    }
+
+                    if (hasPlus) displayValue += '+';
+                    element.textContent = displayValue;
+
+                    if (progress < 1) {
+                        requestAnimationFrame(updateCounter);
+                    }
+                }
+
+                requestAnimationFrame(updateCounter);
+            }
+        } else {
+            // If reduced motion, make everything visible immediately
+            document.querySelectorAll(
+                '.animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale, .philosophy__quote, .section-header'
+            ).forEach(el => el.classList.add('is-visible'));
+        }
     </script>
 </body>
 </html>
