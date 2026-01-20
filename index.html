@@ -355,7 +355,8 @@
         @keyframes underlineShimmer { to { background-position: 200% center; } }
 
         .theater-card.broadway { position: relative; background: linear-gradient(135deg, var(--color-bg-elevated) 0%, var(--color-gold-glow-10) 100%); }
-        .theater-card.broadway::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, var(--color-gold-glow-20), transparent); transform: skewX(-25deg); animation: broadwayShine 4s ease-in-out infinite; }
+        .theater-card.broadway::after { content: ''; position: absolute; top: 0; left: -100%; width: 50%; height: 100%; background: linear-gradient(90deg, transparent, var(--color-gold-glow-20), transparent); transform: skewX(-25deg); animation: broadwayShine 4s ease-in-out infinite; animation-play-state: paused; }
+        .theater-card.broadway.animate-shine::after { animation-play-state: running; }
         @keyframes broadwayShine { 0%, 100% { left: -100%; } 50% { left: 150%; } }
 
         .hero__image-container { animation: heroImageReveal 1s cubic-bezier(0.16, 1, 0.3, 1) 0.3s forwards, heroFloat 6s ease-in-out 1.3s infinite; }
@@ -381,6 +382,18 @@
         .footer p::after { content: ''; position: absolute; bottom: -2px; left: 50%; width: 0; height: 1px; background: var(--color-accent); transition: all 0.3s ease; transform: translateX(-50%); }
         .footer:hover p::after { width: 100%; }
     </style>
+    <noscript>
+        <style>
+            .animate-on-scroll, .animate-slide-left, .animate-slide-right, .animate-scale,
+            .philosophy__quote, .section-header, .social-link, .credential-tag,
+            .hero__eyebrow, .hero__title, .hero__roles, .hero__description,
+            .hero__cta, .hero__stats, .hero__credentials, .hero__image-container {
+                opacity: 1 !important;
+                transform: none !important;
+                animation: none !important;
+            }
+        </style>
+    </noscript>
 </head>
 <body>
     <a href="#main" class="skip-link">Skip to main content</a>
@@ -413,6 +426,7 @@
         <symbol id="icon-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></symbol>
         <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></symbol>
         <symbol id="icon-play" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></symbol>
+        <symbol id="icon-clipboard" viewBox="0 0 24 24"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/><rect x="8" y="2" width="8" height="4" rx="1" ry="1"/><path d="M9 12h6M9 16h6"/></symbol>
     </svg>
 
     <nav class="nav" aria-label="Main navigation">
@@ -430,7 +444,7 @@
                 <li><a href="#theater" class="nav__link">Theater</a></li>
                 <li><a href="#media" class="nav__link">Media</a></li>
                 <li><a href="#coaching" class="nav__link">Coaching</a></li>
-                <li><a href="https://store.peterhollens.com" class="nav__link" target="_blank" rel="noopener">Hollens Shop<span class="visually-hidden"> (opens in new tab)</span></a></li>
+                <li><a href="https://store.peterhollens.com" class="nav__link" target="_blank" rel="noopener">Hollens Shop <span class="visually-hidden"> (opens in new tab)</span></a></li>
                 <li><a href="#contact" class="nav__cta">Get in Touch</a></li>
             </ul>
         </div>
@@ -473,7 +487,7 @@
                         <a href="resume.pdf" class="btn btn--secondary" data-magnetic target="_blank" rel="noopener">
                             <svg class="icon"><use href="#icon-download"/></svg>
                             Resume
-                            <span class="visually-hidden">(opens in new tab)</span>
+                            <span class="visually-hidden"> (opens in new tab)</span>
                         </a>
                     </div>
                     <ul class="hero__stats">
@@ -791,7 +805,7 @@
                         <div class="digital-platforms">
                             <a href="https://www.youtube.com/evynnehollens" class="platform-link" target="_blank" rel="noopener">
                                 <svg class="icon icon--sm"><use href="#icon-youtube"/></svg> YouTube
-                                <span class="visually-hidden">(opens in new tab)</span>
+                                <span class="visually-hidden"> (opens in new tab)</span>
                             </a>
                         </div>
                     </div>
@@ -807,15 +821,15 @@
                         <div class="digital-platforms">
                             <a href="https://open.spotify.com/artist/3nj3MfJCFFoKiRkAOW1R8c" class="platform-link" target="_blank" rel="noopener">
                                 <svg class="icon icon--sm"><use href="#icon-spotify"/></svg> Spotify
-                                <span class="visually-hidden">(opens in new tab)</span>
+                                <span class="visually-hidden"> (opens in new tab)</span>
                             </a>
                             <a href="https://www.instagram.com/evynnehollens" class="platform-link" target="_blank" rel="noopener">
                                 <svg class="icon icon--sm"><use href="#icon-instagram"/></svg> Instagram
-                                <span class="visually-hidden">(opens in new tab)</span>
+                                <span class="visually-hidden"> (opens in new tab)</span>
                             </a>
                             <a href="https://www.patreon.com/evynnehollens" class="platform-link" target="_blank" rel="noopener">
                                 <svg class="icon icon--sm"><use href="#icon-heart"/></svg> Patreon
-                                <span class="visually-hidden">(opens in new tab)</span>
+                                <span class="visually-hidden"> (opens in new tab)</span>
                             </a>
                         </div>
                     </div>
@@ -881,7 +895,7 @@
                             </li>
                         </ul>
                         <div class="coaching__cta">
-                            <a href="#contact" class="btn btn--primary" data-magnetic>Schedule a Session</a>
+                            <a href="https://app.acuityscheduling.com/schedule/8e8c17af" class="btn btn--primary" data-magnetic target="_blank" rel="noopener">Schedule a Session<span class="visually-hidden"> (opens in new tab)</span></a>
                         </div>
                     </div>
                     <div class="coaching__sidebar animate-slide-right">
@@ -906,7 +920,12 @@
                     <a href="resume.pdf" class="btn btn--secondary" data-magnetic target="_blank" rel="noopener">
                         <svg class="icon"><use href="#icon-download"/></svg>
                         Download Resume
-                        <span class="visually-hidden">(opens in new tab)</span>
+                        <span class="visually-hidden"> (opens in new tab)</span>
+                    </a>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScAGjsv7tatBCUObUQsltMlMKl-oKn8NZd7LB8DcsZ-hazdxw/viewform" class="btn btn--secondary" data-magnetic target="_blank" rel="noopener">
+                        <svg class="icon"><use href="#icon-clipboard"/></svg>
+                        Contact Form
+                        <span class="visually-hidden"> (opens in new tab)</span>
                     </a>
                 </div>
                 <ul class="social-links" aria-label="Social media links">
@@ -923,7 +942,7 @@
 
     <footer class="footer" role="contentinfo">
         <div class="container">
-            <p>&copy; <span class="footer-year">2025</span> Evynne Hollens. All rights reserved.</p>
+            <p>&copy; <span class="footer-year">2026</span> Evynne Hollens. All rights reserved.</p>
         </div>
     </footer>
 
@@ -948,8 +967,10 @@ document.querySelectorAll('[data-magnetic]').forEach(el=>{el.addEventListener('m
 document.querySelectorAll('.theater-card').forEach(card=>{card.addEventListener('mousemove',e=>{const r=card.getBoundingClientRect();card.style.setProperty('--x',(e.clientX-r.left)+'px');card.style.setProperty('--y',(e.clientY-r.top)+'px')})});
 document.querySelectorAll('.press-item').forEach((item,i)=>{item.style.setProperty('--shine-delay',i*0.2+'s')});
 const socialLinks=document.querySelector('.social-links');if(socialLinks){const socialObs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('animate-social');socialObs.unobserve(entry.target)}})},{threshold:0.5});socialObs.observe(socialLinks)}
+const broadwayCard=document.querySelector('.theater-card.broadway');if(broadwayCard){const broadwayObs=new IntersectionObserver((entries)=>{entries.forEach(entry=>{entry.target.classList.toggle('animate-shine',entry.isIntersecting)})},{threshold:0.1});broadwayObs.observe(broadwayCard)}
 }else{document.querySelectorAll('.animate-on-scroll,.animate-slide-left,.animate-slide-right,.animate-scale,.philosophy__quote,.section-header,.press-item').forEach(el=>el.classList.add('is-visible'));document.querySelectorAll('.social-link').forEach(l=>{l.style.opacity='1';l.style.transform='none'})}
 document.querySelector('.footer-year').textContent=new Date().getFullYear();
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js').catch(()=>{});}
     </script>
 </body>
 </html>
